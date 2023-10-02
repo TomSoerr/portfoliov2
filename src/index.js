@@ -2,7 +2,7 @@ import addCurrentSiteClass from './current-site-class.js';
 import header from './components/header/header.js';
 import contentMD from './index.md';
 import sanitizeMD from './sanitize-md.js';
-// import toc from './components/toc/toc.handlebars';
+import { tocWrapper, buildToc } from './components/toc/toc.js';
 
 import './index.css';
 import './nav-footer.css';
@@ -30,12 +30,25 @@ fragment.append(
 );
 
 // //// CONTENT ////
+const wrapper = document.createElement('div');
+wrapper.classList.add('content-wrapper');
+
+// // ADD MARKDOWN CONTENT //
 const content = document.createElement('article');
 content.innerHTML = sanitizeMD(contentMD);
 
-// Add id to first h2 on page
+// // ADD ID TO FIRST HEADING //
 const contentHeading = content.querySelectorAll('h2')[0];
 contentHeading.id = 'read-more';
-fragment.append(content);
+
+// // APPEND TO WRAPPER //
+wrapper.append(content, tocWrapper());
+
+// //// APPEND TO DOM ////
+
+fragment.append(wrapper);
 
 main.append(fragment);
+
+// //// TOC ////
+buildToc();

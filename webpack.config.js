@@ -45,7 +45,6 @@ export default {
     index: './src/index.js',
     projects: './src/sites/projects/projects.js',
     project: './src/sites/project/project.js',
-    contact: './src/sites/contact/contact.js',
   },
 
   mode: 'development',

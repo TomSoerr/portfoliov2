@@ -97,9 +97,9 @@ h6 {
     "header header header"
     "content content content" 1fr
     "footer footer footer" /
-    1fr 1fr 1fr;
+    1fr auto 1fr;
 }
 
-.index article {
+.index .content-wrapper {
   grid-area: content;
 }
