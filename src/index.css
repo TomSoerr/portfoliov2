@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap");
 
+/* **** DEFAULTS **** */
 *,
 *::after,
 *::before {
@@ -78,3 +79,5 @@ h5 {
 h6 {
   font-size: var(--tst-h6);
 }
+
+/* **** INDEX **** */

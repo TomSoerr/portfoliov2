@@ -1,4 +1,3 @@
-import RemarkHTML from 'remark-html';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -82,11 +81,11 @@ export default {
             loader: 'html-loader',
           },
           {
-            loader: 'remark-loader',
+            loader: 'markdown-loader',
             options: {
-              remarkOptions: {
-                plugins: [RemarkHTML],
-              },
+              // Pass options to marked
+              // See https://marked.js.org/using_advanced#options
+              gfm: true,
             },
           },
         ],
