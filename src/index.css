@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&display=swap");
+
 *,
 *::after,
 *::before {
@@ -8,6 +10,71 @@
 
 body {
   background-color: #f5f5f5;
-  font-family: 'Atkinson Hyperlegible', sans-serif;
+  font-family: "Atkinson Hyperlegible", sans-serif;
   font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+:root {
+  --tst-space-xss: 0.25rem;
+  --tst-space-xs: 0.5rem;
+  --tst-space-s: 1rem;
+  --tst-space-m: 1.5rem;
+  --tst-space-l: 2rem;
+  --tst-space-xl: 3rem;
+  --tst-space-xxl: 6rem;
+
+  --tst-color-text: #333;
+  --tst-color-light: #fff;
+  --tst-color-dark: #000;
+  --tst-color-primary: #00f;
+
+  --tst-text-scale: 1.618;
+  --tst-h6: 1rem;
+  --tst-h5: calc(var(--tst-h6) * var(--tst-text-scale));
+  --tst-h4: calc(var(--tst-h5) * var(--tst-text-scale));
+  --tst-h3: calc(var(--tst-h4) * var(--tst-text-scale));
+  --tst-h2: calc(var(--tst-h3) * var(--tst-text-scale));
+  --tst-h1: calc(var(--tst-h2) * var(--tst-text-scale));
+
+  --tst-heading-font: "DM Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--tst-color-dark);
+  font-weight: 500;
+  font-family: var(--tst-heading-font);
+}
+
+h1 {
+  font-size: var(--tst-h1);
+}
+
+h2 {
+  font-size: var(--tst-h2);
+}
+
+h3 {
+  font-size: var(--tst-h3);
+}
+
+h4 {
+  font-size: var(--tst-h4);
+}
+
+h5 {
+  font-size: var(--tst-h5);
+}
+
+h6 {
+  font-size: var(--tst-h6);
 }
