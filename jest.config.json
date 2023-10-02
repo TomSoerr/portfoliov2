@@ -1,0 +1,7 @@
+{
+  "moduleNameMapper": {
+    "\\.(scss|sass|css)$": "identity-obj-proxy",
+    "\\.(png|jpg|webp|ttf|woff|woff2|svg|mp4)$": "<rootDir>/imageMock.js"
+  },
+  "testEnvironment": "jsdom"
+}
