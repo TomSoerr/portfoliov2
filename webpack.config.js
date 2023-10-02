@@ -43,9 +43,9 @@ projects.forEach((project) => {
 export default {
   entry: {
     index: './src/index.js',
-    projects: './src/components/projects/projects.js',
-    project: './src/components/project/project.js',
-    contact: './src/components/contact/contact.js',
+    projects: './src/sites/projects/projects.js',
+    project: './src/sites/project/project.js',
+    contact: './src/sites/contact/contact.js',
   },
 
   mode: 'development',
