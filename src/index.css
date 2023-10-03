@@ -104,11 +104,11 @@ h6 {
 .index {
   display: grid;
   grid:
-    "nav nav nav"
-    "header header header"
-    "content content content" 1fr
-    "footer footer footer" /
-    1fr auto 1fr;
+    "nav"
+    "header"
+    "content" 1fr
+    "footer" /
+    1fr;
 }
 
 .index .tst-content-wrapper {
