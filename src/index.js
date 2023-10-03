@@ -31,7 +31,17 @@ fragment.append(
 
 // //// CONTENT ////
 const wrapper = document.createElement('div');
-wrapper.classList.add('content-wrapper');
+wrapper.classList.add('tst-content-wrapper');
+
+['resize', 'load'].forEach((event) => {
+  window.addEventListener(event, () => {
+    if (wrapper.children[0].offsetHeight !== wrapper.children[1].offsetHeight) {
+      wrapper.classList.add('tst-wrapped');
+    } else {
+      wrapper.classList.remove('tst-wrapped');
+    }
+  });
+});
 
 // // ADD MARKDOWN CONTENT //
 const content = document.createElement('article');

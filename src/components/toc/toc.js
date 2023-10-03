@@ -1,33 +1,38 @@
 import './toc.css';
+import tocHDS from './toc.handlebars';
+import tocItemHDS from './toc-item.handlebars';
 
-const tocNav = document.createElement('nav');
-const tocList = document.createElement('ul');
+const template = document.createElement('template');
 
-const tocListItems = document.createElement('li');
-const tocLinks = document.createElement('a');
+function hdsToNode(hds) {
+  const temp = template.cloneNode();
+  temp.innerHTML = hds;
+  return temp.content;
+}
 
 function buildToc() {
-  const template = document.createDocumentFragment();
+  const temp = document.createDocumentFragment();
 
-  document.querySelectorAll('h2, h3').forEach((heading) => {
-    // Check if heading has an id, if not, create one
-    heading.id = heading.id || Math.floor(Math.random() * 10 ** 15).toString();
+  document
+    .querySelectorAll('h2:not(.tst-toc-item), h3:not(.tst-toc-item)')
+    .forEach((heading) => {
+      // Check if heading has an id, if not, create one
+      heading.id =
+        heading.id || Math.floor(Math.random() * 10 ** 15).toString();
 
-    // Create dom elements
-    const li = tocListItems.cloneNode();
-    const a = tocLinks.cloneNode();
-    a.textContent = heading.textContent;
-    a.href = `#${heading.id}`;
-    li.append(a);
-    template.append(li);
-  });
-  tocList.append(template);
+      // Create dom elements
+      temp.append(
+        hdsToNode(
+          tocItemHDS({
+            id: heading.id,
+            text: heading.textContent,
+          }),
+        ),
+      );
+    });
+  document.querySelector('#tst-toc ul').append(temp);
 }
 
-function tocWrapper() {
-  tocNav.classList.add('toc');
-  tocNav.append(tocList);
-  return tocNav;
-}
+const tocWrapper = () => hdsToNode(tocHDS({}));
 
 export { tocWrapper, buildToc };

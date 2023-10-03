@@ -1,0 +1,13 @@
+#tst-toc h2 {
+  font-size: var(--tst-h5);
+}
+
+#tst-toc ul {
+  list-style: none;
+  border-left: 2px solid var(--tst-color-dark);
+  padding-left: var(--tst-space-s);
+}
+
+#tst-toc li {
+  margin-bottom: var(--tst-space-xs);
+}
