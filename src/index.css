@@ -18,6 +18,7 @@ body {
   max-width: 1800px;
   margin: 0 auto;
   background-color: var(--tst-color-light);
+  position: relative;
 }
 
 main {
@@ -100,6 +101,18 @@ h6 {
   font-size: var(--tst-h6);
 }
 
+@media (max-width: 749px) {
+  :root {
+    --tst-text-scale: 1.5;
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --tst-text-scale: 1.333;
+  }
+}
+
 /* **** INDEX **** */
 .index {
   display: grid;
@@ -111,7 +124,7 @@ h6 {
     1fr;
 }
 
-.index .tst-content-wrapper {
+.tst-content-wrapper {
   grid-area: content;
 }
 
@@ -127,7 +140,7 @@ h6 {
 
 .tst-content-wrapper article {
   margin-left: auto;
-  width: clamp(45ch, 50%, 75ch);
+  width: clamp(45ch, 60%, 75ch);
 }
 
 .tst-content-wrapper nav {

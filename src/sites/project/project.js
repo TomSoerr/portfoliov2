@@ -1,6 +1,8 @@
 import addCurrentSiteClass from '../../current-site-class.js';
 import sanitizeMD from '../../sanitize-md.js';
+import responsiveWrapper from '../../responsive-wrapper.js';
 import { tocWrapper, buildToc } from '../../components/toc/toc.js';
+import projectSlider from '../../components/project-slider/project-slider.js';
 
 import '../../index.css';
 import './project.css';
@@ -13,19 +15,16 @@ const fragment = document.createDocumentFragment();
 
 const currentProject = addCurrentSiteClass();
 
+// //// SLIDER ////
+const aside = document.createElement('aside');
+aside.classList.add('tst-project-slider');
+aside.innerHTML = projectSlider(allContent);
+fragment.append(aside);
+
 // //// CONTENT ////
 const wrapper = document.createElement('div');
 wrapper.classList.add('tst-content-wrapper');
-
-// ['resize', 'load'].forEach((event) => {
-//   window.addEventListener(event, () => {
-//     if (wrapper.children[0].offsetHeight !== wrapper.children[1].offsetHeight) {
-//       wrapper.classList.add('tst-wrapped');
-//     } else {
-//       wrapper.classList.remove('tst-wrapped');
-//     }
-//   });
-// });
+responsiveWrapper(wrapper);
 
 // // ADD MARKDOWN CONTENT //
 const content = document.createElement('article');

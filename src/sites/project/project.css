@@ -1,3 +1,12 @@
+.project {
+  display: grid;
+  grid:
+    "slider nav"
+    "slider content" 1fr
+    "slider footer" /
+    2fr 6fr;
+}
+
 .project h1 {
   font-size: var(--tst-h3);
 }

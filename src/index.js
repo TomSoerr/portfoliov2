@@ -1,7 +1,8 @@
 import addCurrentSiteClass from './current-site-class.js';
+import sanitizeMD from './sanitize-md.js';
+import responsiveWrapper from './responsive-wrapper.js';
 import header from './components/header/header.js';
 import contentMD from './index.md';
-import sanitizeMD from './sanitize-md.js';
 import { tocWrapper, buildToc } from './components/toc/toc.js';
 
 import './index.css';
@@ -32,16 +33,7 @@ fragment.append(
 // //// CONTENT ////
 const wrapper = document.createElement('div');
 wrapper.classList.add('tst-content-wrapper');
-
-['resize', 'load'].forEach((event) => {
-  window.addEventListener(event, () => {
-    if (wrapper.children[0].offsetHeight !== wrapper.children[1].offsetHeight) {
-      wrapper.classList.add('tst-wrapped');
-    } else {
-      wrapper.classList.remove('tst-wrapped');
-    }
-  });
-});
+responsiveWrapper(wrapper);
 
 // // ADD MARKDOWN CONTENT //
 const content = document.createElement('article');
