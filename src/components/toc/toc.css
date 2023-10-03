@@ -1,5 +1,6 @@
 #tst-toc h2 {
   font-size: var(--tst-h5);
+  margin-bottom: var(--tst-space-xs);
 }
 
 #tst-toc ul {

@@ -1,0 +1,8 @@
+aside {
+  grid-area: slider;
+  padding: var(--tst-space-s) var(--tst-space-s);
+  border-right: 2px solid var(--tst-color-dark);
+  position: fixed;
+  width: 20vw;
+  height: 100%;
+}
