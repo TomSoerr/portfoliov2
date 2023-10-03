@@ -11,7 +11,7 @@
 
 body {
   background-color: #f5f5f5;
-  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-family: var(--tst-text-font);
   font-size: 16px;
   min-height: 100vh;
   width: 100%;
@@ -45,7 +45,6 @@ img {
   --tst-color-light: #fff;
   --tst-color-dark: #000;
   --tst-color-primary: #00f;
-
   --tst-text-scale: 1.618;
   --tst-h6: 1.125rem;
   --tst-h5: calc(1rem * var(--tst-text-scale));
@@ -55,14 +54,17 @@ img {
   --tst-h1: calc(var(--tst-h2) * var(--tst-text-scale) * var(--tst-text-scale));
 
   --tst-heading-font: "DM Sans", sans-serif;
+  --tst-text-font: "Atkinson Hyperlegible", sans-serif;
+
+  --tst-border: 1px solid var(--tst-color-dark);
 }
 
-a {
+nav a {
   color: var(--tst-color-text);
   text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
   color: var(--tst-color-primary);
 }
 
@@ -133,7 +135,7 @@ h6 {
   margin: 0 auto;
   height: min-content;
   margin: 0 auto;
-  gap: var(--tst-space-s);
+  gap: var(--tst-space-l);
   flex-wrap: wrap-reverse;
   padding: var(--tst-space-s) var(--tst-space-s) var(--tst-space-m);
 }
@@ -145,6 +147,10 @@ h6 {
 
 .tst-content-wrapper nav {
   margin-right: auto;
+}
+
+.tst-content-wrapper.tst-wrapped {
+  gap: var(--tst-space-s);
 }
 
 .tst-content-wrapper.tst-wrapped article {

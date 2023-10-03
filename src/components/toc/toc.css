@@ -5,7 +5,7 @@
 
 #tst-toc ul {
   list-style: none;
-  border-left: 2px solid var(--tst-color-dark);
+  border-left: var(--tst-border);
   padding-left: var(--tst-space-s);
 }
 

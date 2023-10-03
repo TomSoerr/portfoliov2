@@ -45,6 +45,7 @@ body > nav > a {
 
 footer {
   grid-area: footer;
+  margin-top: var(--tst-space-xl);
 }
 
 footer a {
