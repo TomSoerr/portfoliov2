@@ -1,8 +1,26 @@
 aside {
   grid-area: slider;
   padding: var(--tst-space-s) var(--tst-space-s);
-  border-right: 2px solid var(--tst-color-dark);
+  border-right: var(--tst-border);
   position: fixed;
   width: 20vw;
   height: 100%;
+}
+
+aside section {
+  margin-bottom: var(--tst-space-s);
+}
+
+aside.tst-project-slider h3 {
+  font-size: 1rem;
+  font-weight: normal;
+  font-family: var(--tst-text-font);
+  padding: var(--tst-space-xs) 0;
+  border-bottom: var(--tst-border);
+}
+
+aside.tst-project-slider h2 {
+  font-size: var(--tst-h6);
+  margin-bottom: var(--tst-space-s);
+  border-bottom: var(--tst-border);
 }

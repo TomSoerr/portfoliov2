@@ -4,29 +4,13 @@
     "slider nav"
     "slider content" 1fr
     "slider footer" /
-    2fr 6fr;
+    20vw 1fr;
 }
 
-.project h1 {
-  font-size: var(--tst-h3);
+.project article :where(p, ul, ol, blockquote, pre, table, figure, hr) {
+  font-family: var(--tst-text-font);
 }
 
-.project h2 {
-  font-size: var(--tst-h4);
-}
-
-.project h3 {
-  font-size: var(--tst-h5);
-}
-
-.project h4 {
-  font-size: var(--tst-h6);
-}
-
-.project h5 {
-  font-size: var(--tst-h6);
-}
-
-.project h6 {
-  font-size: var(--tst-h6);
+.project article {
+  --color-accent-fg: #00f;
 }

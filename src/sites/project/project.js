@@ -3,6 +3,7 @@ import sanitizeMD from '../../sanitize-md.js';
 import responsiveWrapper from '../../responsive-wrapper.js';
 import { tocWrapper, buildToc } from '../../components/toc/toc.js';
 import projectSlider from '../../components/project-slider/project-slider.js';
+import 'github-markdown-css';
 
 import '../../index.css';
 import './project.css';
@@ -29,6 +30,7 @@ responsiveWrapper(wrapper);
 // // ADD MARKDOWN CONTENT //
 const content = document.createElement('article');
 content.innerHTML = sanitizeMD(allContent[currentProject]);
+content.classList.add('markdown-body');
 
 // // APPEND TO WRAPPER //
 wrapper.append(content, tocWrapper());

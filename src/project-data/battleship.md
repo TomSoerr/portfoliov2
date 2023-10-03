@@ -1,13 +1,14 @@
-![Ich bin eventuell ein alt tag](../img/test.png)
+![](../img/battleship.png) 
+# My “battleship” Project
 
-# Battleship
+## Description
+In this project from “The Odin Project” I create a simple battleship game <br>
+This project has:
 
-In diesem Projekt aus dem Odin Kurs ging es hauptsächlich um „Test Driven Development“. Um das Konzept in seiner Anwendung mit seinen Vorteilen kennenzulernen. Mit Jest habe ich also zuerst die Tests geschrieben und dann den Code für das Spiel entwickelt. Ziel war es, dass am Ende alle wichtigen Funktionen Tests hatten.
+- popup to place all the ships and
+- a computer to play against
 
-### Test überschrift 3
-Um zu spielen, gibt es am Anfang ein Fenster, wo der Spieler seine Schiffe setzen kann. Der Computer setzt dann anschließend zufallsbasiert Schiffe.
-
-## Test überschrift 2
-Genau wie beim Brettspiel versucht der Spieler alle Schiffe vom Gegner zu treffen. Der Spieler hat einen Überblick über die beiden Spielfelder, auf seine eigenen Schiffe und auf die getroffenen und ins Wasser gegangenen Schüsse. Der Computer schießt dann nach jedem Zug immer zufällig auf ein freies Spielfeld.
-
-[Github](https://github.com/TomSoerr/odin-battleship)
+## Links
+- [Live Preview](https://tomsoerr.github.io/odin-battleship/)
+- Link to the [Assignment](https://www.theodinproject.com/lessons/node-path-javascript-battleship)
+- See my next [Project](https://github.com/TomSoerr/rebellinnen)
