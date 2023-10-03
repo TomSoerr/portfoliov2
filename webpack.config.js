@@ -26,7 +26,7 @@ const htmlWebpackPluginConfigs = [
 projects.forEach((project) => {
   htmlWebpackPluginConfigs.push(
     new HtmlWebpackPlugin({
-      title: project.toUpperCase(),
+      title: project.charAt(0).toUpperCase() + project.slice(1),
       filename: `../project/${project}.html`,
       template: './src/index.handlebars',
       chunks: ['project'],

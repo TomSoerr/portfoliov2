@@ -1,0 +1,9 @@
+<h2>All Projects</h2>
+{{#each project}}
+  <section>
+    <a href="./{{this.href}}.html">
+      <img src="{{this.img}}" alt="{{this.alt}}" />
+      <h3>{{this.heading}}</h3>
+    </a>
+  </section>
+{{/each}}

@@ -2,7 +2,7 @@ import addCurrentSiteClass from '../../current-site-class.js';
 import sanitizeMD from '../../sanitize-md.js';
 import responsiveWrapper from '../../responsive-wrapper.js';
 import { tocWrapper, buildToc } from '../../components/toc/toc.js';
-import projectSlider from '../../components/project-slider/project-slider.js';
+import projectSlider from '../../components/project-list/project-list.js';
 import 'github-markdown-css';
 
 import '../../index.css';
