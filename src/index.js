@@ -21,7 +21,7 @@ fragment.append(
     headline: 'Moin',
     buttonTop: {
       text: 'My projects',
-      link: '/projects',
+      link: 'projects.html',
     },
     buttonBottom: {
       text: 'Read more about me',

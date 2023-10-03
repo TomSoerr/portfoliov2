@@ -20,7 +20,7 @@ fragment.append(
     headline: 'Work',
     buttonTop: {
       text: 'Contact me',
-      link: '',
+      link: 'https://www.linkedin.com/in/tom-stöhrer-b5707a265',
     },
     buttonBottom: {
       text: 'See more about me',

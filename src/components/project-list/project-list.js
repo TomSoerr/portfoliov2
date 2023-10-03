@@ -1,5 +1,5 @@
-import './project-slider.css';
-import projectSliderHBS from './project-slider.handlebars';
+import './project-list.css';
+import projectSliderHBS from './project-list.handlebars';
 import sanitizeMD from '../../sanitize-md.js';
 
 export default function projectSlider(allProjects) {
@@ -9,6 +9,7 @@ export default function projectSlider(allProjects) {
     template.innerHTML = sanitizeMD(allProjects[project]);
     template = template.content;
     projectArray.push({
+      href: project,
       img: template.querySelector('img').src,
       alt: template.querySelector('img').alt,
       heading: template.querySelector('h1').textContent,
