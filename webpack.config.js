@@ -21,13 +21,6 @@ const htmlWebpackPluginConfigs = [
     template: './src/index.handlebars',
     chunks: ['projects'],
   }),
-
-  new HtmlWebpackPlugin({
-    title: 'Contact',
-    filename: '../contact.html',
-    template: './src/index.handlebars',
-    chunks: ['contact'],
-  }),
 ];
 
 projects.forEach((project) => {
@@ -36,6 +29,7 @@ projects.forEach((project) => {
       title: project.toUpperCase(),
       filename: `../project/${project}.html`,
       template: './src/index.handlebars',
+      chunks: ['project'],
     }),
   );
 });
