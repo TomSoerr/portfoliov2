@@ -4,7 +4,10 @@
 
 ## Beschreibung
 
-
+TODO:
+- Content
+- nav links
+- projects site with grid and all projects
 
 ## Links
 
