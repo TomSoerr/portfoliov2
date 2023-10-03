@@ -38,6 +38,11 @@ header a {
   width: max-content;
 }
 
+header a:hover {
+  color: var(--tst-color-light);
+  background-color: var(--tst-color-dark);
+}
+
 header a:last-child {
   margin-right: var(--tst-space-xl);
 }

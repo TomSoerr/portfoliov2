@@ -1,43 +1,43 @@
 /* **** BOTH **** */
-nav,
+body > nav,
 footer {
   display: flex;
   align-items: center;
-  gap: var(--tst-space-xs);
+  gap: var(--tst-space-s);
   padding: var(--tst-space-xs) var(--tst-space-s);
   width: 100%;
 }
 
-nav svg,
+body > nav svg,
 footer svg {
   height: 100%;
   color: var(--tst-color-dark);
 }
 
 footer p,
-nav ul a {
+body > nav ul a {
   font-weight: 500;
-  font-size: var(--tst-h5);
+  font-size: var(--tst-h6);
   font-family: var(--tst-heading-font);
   color: var(--tst-color-dark);
 }
 
 /* **** NAV **** */
-nav {
+body > nav {
   grid-area: nav;
 }
 
-nav svg {
+body > nav svg {
   height: var(--tst-space-xl);
   margin-right: auto;
 }
 
-nav ul {
+body > nav ul {
   display: contents;
   list-style: none;
 }
 
-nav > a {
+body > nav > a {
   margin-right: auto;
 }
 
