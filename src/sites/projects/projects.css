@@ -1,9 +1,0 @@
-.projects {
-  display: grid;
-  grid:
-    "nav"
-    "header"
-    "content" 1fr
-    "footer" /
-    1fr;
-}
