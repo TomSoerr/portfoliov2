@@ -6,7 +6,7 @@ import Image from '../image/Image';
 function Nav() {
   return (
     <nav>
-      <Image src="/img/logo-dark.svg" alt="Logo" />
+      <Link to="/"><Image src="/img/logo-dark.svg" alt="Logo" /></Link>
       <button type="button" onClick={(e) => e.target.classList.toggle('open')}>
         <span>Toggle</span>
       </button>

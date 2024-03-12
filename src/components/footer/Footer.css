@@ -1,5 +1,5 @@
 footer {
-  background-color: #dedede;
+  background-color: var(--color-bg-2);
   display: grid;
   grid:
     "logo . . ."

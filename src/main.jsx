@@ -4,7 +4,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom';
-import createRouts from './content.jsx';
 
 import './main.css';
 import 'normalize.css';
@@ -14,6 +13,27 @@ import UeberMich from './sites/UeberMich.jsx';
 import Kontakt from './sites/Kontakt.jsx';
 import Blog from './sites/Blog.jsx';
 import Projekte from './sites/Projekte.jsx';
+
+import BlogWrapper from './components/BlogWrapper.jsx';
+import ProjectWrapper from './components/ProjectWrapper.jsx';
+
+import content from './content.js';
+
+function createRouts() {
+  const routes = [];
+  Object.entries(content).forEach(([key, value]) => {
+    value.forEach((element) => {
+      routes.push({
+        path: `/${key}/${element}`,
+        element: key === 'blog'
+          ? <BlogWrapper path={element} />
+          : <ProjectWrapper path={element} />,
+      });
+    });
+  });
+
+  return routes;
+}
 
 const router = createBrowserRouter([
   {

@@ -5,7 +5,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #dedede;
+  background-color: var(--color-bg-2);
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -24,7 +24,7 @@ nav ul {
   top: var(--nav-height);
   left: 0;
   right: 0;
-  background-color: #dedede;
+  background-color: var(--color-bg-2);
   width: 100%;
 }
 
@@ -36,11 +36,15 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #000;
+  color: var(--color-text);
 }
 
 nav ul li a:hover {
   text-decoration: underline;
+}
+
+nav > a {
+  display: contents;
 }
 
 nav img {
@@ -63,7 +67,7 @@ nav button {
   padding: 0;
   height: calc(var(--nav-height) - 2rem);
   width: calc(var(--nav-height) - 2rem);
-  background-color: tomato;
+  background-color: var(--color-accent);
 }
 
 nav button.open {

@@ -5,10 +5,10 @@ import './Root.css';
 
 export default function Root({ children }) {
   return (
-    <div>
+    <>
       <Nav />
       <main>{children}</main>
       <Footer />
-    </div>
+    </>
   );
 }
