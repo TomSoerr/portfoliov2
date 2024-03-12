@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Root from '../components/root/Root';
+import Section from '../components/section/Section';
 
 export default function Home() {
   useEffect(() => {
@@ -8,8 +9,9 @@ export default function Home() {
   }, []);
   return (
     <Root>
-      <h1>Blog</h1>
-
+      <Section>
+        <h1>Blog</h1>
+      </Section>
     </Root>
   );
 }

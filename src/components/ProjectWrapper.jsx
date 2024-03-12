@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import SimpleMarkdown from './SimpleMarkdown';
 import Root from './root/Root';
+import Section from './section/Section';
 
 export default function BlogWrapper({ path }) {
   const [data, setData] = useState(null);
@@ -15,17 +16,23 @@ export default function BlogWrapper({ path }) {
   if (error) {
     return (
       <Root>
-        <div>
+        <Section>
           Error loading file:
           {path}
-        </div>
+        </Section>
       </Root>
     );
   }
 
   if (!data) {
-    return <Root><div>Loading...</div></Root>;
+    return <Root><Section>Loading...</Section></Root>;
   }
 
-  return <Root><SimpleMarkdown data={data} /></Root>;
+  return (
+    <Root>
+      <Section>
+        <SimpleMarkdown data={data} />
+      </Section>
+    </Root>
+  );
 }
