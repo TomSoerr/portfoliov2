@@ -1,0 +1,19 @@
+.section {
+  padding: 0 var(--space-x-o);
+  margin: var(--space-y-o) auto;
+  width: fit-content;
+}
+
+.section-content {
+  max-width: min(
+    calc(var(--default-page-width) + 2 * var(--space-x-i)),
+    calc(100vw - 2 * var(--space-x-o))
+  );
+  padding: var(--space-y-i) var(--space-x-i);
+  border-radius: var(--border-radius);
+  width: 100vw;
+}
+
+.bg .section-content {
+  background-color: var(--color-bg-2);
+}

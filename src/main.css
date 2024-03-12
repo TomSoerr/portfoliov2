@@ -48,11 +48,33 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --nav-height: 5rem;
+  --nav-height: 8rem;
   --color-accent: #f7ce46;
   --color-text: #000000;
   --color-bg-1: #ffffff;
   --color-bg-2: #eae9e7;
+
+  --page-width-l: 1440px;
+  --page-width-m: 1296px;
+  --page-width-s: 1024px;
+  --page-width-xl: 1668px;
+  --page-width-text: 720px;
+
+  --default-page-width: var(--page-width-l);
+
+  --root-space: 1rem;
+  --space-xs: calc(var(--root-space) * 0.5);
+  --space-s: calc(var(--root-space) * 1);
+  --space-m: calc(var(--root-space) * 2);
+  --space-l: calc(var(--root-space) * 4);
+  --space-xl: calc(var(--root-space) * 8);
+
+  --space-y-i: var(--space-m);
+  --space-y-o: var(--space-xl);
+  --space-x-i: var(--space-m);
+  --space-x-o: var(--space-s);
+
+  --border-radius: 0.8rem;
 }
 
 *,
@@ -75,8 +97,3 @@ pre code {
 h1 {
   color: var(--color-accent);
 }
-
-/* 
-@media (prefers-color-scheme: light) {
-
-} */

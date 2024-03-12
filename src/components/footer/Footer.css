@@ -1,13 +1,14 @@
-footer {
-  background-color: var(--color-bg-2);
+footer.section {
+  margin-bottom: var(--space-x-o);
+}
+
+footer .section-content {
   display: grid;
   grid:
     "logo . . ."
     "about about address sitemap" /
     1fr 1fr 1fr 1fr;
   gap: 2rem;
-
-  padding: 2rem;
 }
 
 footer ul {
@@ -46,33 +47,4 @@ footer .about {
 
 footer .sitemap {
   grid-area: sitemap;
-}
-
-/* Komponent: Bilder */
-
-#bilder {
-  display: flex;
-  height: 15rem;
-  width: 100%;
-  gap: 2rem;
-}
-
-#bilder div {
-  flex: 1 1 0;
-}
-
-#bilder :nth-child(1) {
-  background-color: #bd7777;
-}
-
-#bilder :nth-child(2) {
-  background-color: #7cbd77;
-}
-
-#bilder :nth-child(3) {
-  background-color: #778cbd;
-}
-
-#bilder :nth-child(4) {
-  background-color: #b877bd;
 }

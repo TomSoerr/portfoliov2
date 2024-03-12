@@ -1,16 +1,33 @@
-nav {
-  width: 100%;
-  height: var(--nav-height);
+nav.section {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
+  margin: var(--space-x-o) auto;
+}
+
+/* nav.section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(-1 * var(--space-x-o));
+  left: min(calc((100vw - 100%) / -2), 0px);
+  height: var(--nav-height);
+  width: 100vw;
+  z-index: -1;
+  backdrop-filter: blur(5px);
+} */
+
+nav .section-content {
+  height: calc(var(--nav-height) - 2 * var(--space-x-o));
   background-color: var(--color-bg-2);
   display: flex;
   gap: 2rem;
   align-items: center;
-  padding: 1rem 2rem;
-  z-index: 100;
+
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 nav ul {
@@ -43,13 +60,15 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-nav > a {
+nav .section-content > a {
   display: contents;
 }
 
 nav img {
   margin-right: auto;
-  max-height: 100%;
+  max-height: calc(var(--nav-height) - 1.5rem - 2 * var(--space-x-o));
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
   width: auto;
 }
 
