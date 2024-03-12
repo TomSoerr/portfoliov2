@@ -4,7 +4,7 @@
   font-family: "Atkinson Hyperlegible";
   font-style: normal;
   font-weight: 400;
-  src: url("../public/fonts/atkinson-hyperlegible-v11-latin-regular.woff2")
+  src: url("/fonts/atkinson-hyperlegible-v11-latin-regular.woff2")
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -14,7 +14,7 @@
   font-family: "Atkinson Hyperlegible";
   font-style: italic;
   font-weight: 400;
-  src: url("../public/fonts/atkinson-hyperlegible-v11-latin-italic.woff2")
+  src: url("/fonts/atkinson-hyperlegible-v11-latin-italic.woff2")
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -24,8 +24,7 @@
   font-family: "Atkinson Hyperlegible";
   font-style: normal;
   font-weight: 700;
-  src: url("../public/fonts/atkinson-hyperlegible-v11-latin-700.woff2")
-    format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("/fonts/atkinson-hyperlegible-v11-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
 /* atkinson-hyperlegible-700italic - latin */
@@ -34,7 +33,7 @@
   font-family: "Atkinson Hyperlegible";
   font-style: italic;
   font-weight: 700;
-  src: url("../public/fonts/atkinson-hyperlegible-v11-latin-700italic.woff2")
+  src: url("/fonts/atkinson-hyperlegible-v11-latin-700italic.woff2")
     format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -48,6 +47,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --nav-height: 5rem;
 }
 
 *,
@@ -58,6 +59,11 @@
 
 body {
   font-family: var(--text-font);
+  font-size: 1.6rem;
+}
+
+pre code {
+  /* font-size: 1.6rem !important; */
 }
 
 /* 
