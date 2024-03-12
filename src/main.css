@@ -49,6 +49,10 @@
   -moz-osx-font-smoothing: grayscale;
 
   --nav-height: 5rem;
+  --color-accent: #f7ce46;
+  --color-text: #000000;
+  --color-bg-1: #ffffff;
+  --color-bg-2: #eae9e7;
 }
 
 *,
@@ -60,10 +64,16 @@
 body {
   font-family: var(--text-font);
   font-size: 1.6rem;
+  color: var(--color-text);
+  background-color: var(--color-bg-1);
 }
 
 pre code {
   /* font-size: 1.6rem !important; */
+}
+
+h1 {
+  color: var(--color-accent);
 }
 
 /* 

@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Root from '../components/root/Root';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = 'Über Tom';
+  }, []);
   return (
     <Root>
       <h1>Über mich</h1>
