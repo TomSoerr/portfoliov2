@@ -1,36 +1,64 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 import './Nav.css';
-import Image from '../image/Image';
+import { v4 as uuid } from 'uuid';
 
-function Nav() {
+function NavUl({ links }) {
+  return (
+    <ul>
+      {links.map((link) => (
+        <li key={uuid()}>
+          <NavLink exact={(link.exact) ? 'true' : 'false'} to={link.to}>
+            {link.name}
+          </NavLink>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function MenuBtn() {
+  const buttonRef = useRef(null);
+
+  useEffect(() => {
+    const button = buttonRef.current;
+    const toggleClass = () => button.classList.toggle('open');
+
+    if (button) {
+      button.addEventListener('click', toggleClass);
+    }
+
+    return () => {
+      if (button) {
+        button.removeEventListener('click', toggleClass);
+      }
+    };
+  }, []);
+
+  return (
+    <button type="button" ref={buttonRef}>
+      <div />
+      <span>Toggle</span>
+    </button>
+  );
+}
+
+export default function Nav() {
   return (
     <nav className="section bg">
       <div className="section-content">
-        <Link to="/"><Image src="/img/logo-dark.svg" alt="Logo" /></Link>
-        <button type="button" onClick={(e) => e.target.classList.toggle('open')}>
-          <span>Toggle</span>
-        </button>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/ueber-mich">Über mich </Link>
-          </li>
-          <li>
-            <Link to="/kontakt">Kontakt</Link>
-          </li>
-          <li>
-            <Link to="/projekte">Projekte</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-        </ul>
+        <NavLink to="/">tom.soerr</NavLink>
+        <MenuBtn />
+        <NavUl
+          links={[
+            { to: '/', name: 'Home', exact: true },
+            { to: '/ueber-mich', name: 'Über mich' },
+            { to: '/kontakt', name: 'Kontakt' },
+            { to: '/projekte', name: 'Projekte' },
+            { to: '/blog', name: 'Blog' },
+          ]}
+        />
       </div>
     </nav>
   );
 }
-
-export default Nav;

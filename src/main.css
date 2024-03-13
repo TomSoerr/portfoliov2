@@ -48,11 +48,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --nav-height: 8rem;
+  --nav-height: 5.5rem;
   --color-accent: #f7ce46;
   --color-text: #000000;
-  --color-bg-1: #ffffff;
-  --color-bg-2: #eae9e7;
+  --color-bg-2: #ffffff;
+  --color-bg-1: #f8f8f8;
+  --color-border: #eeeeee;
 
   --page-width-l: 1440px;
   --page-width-m: 1296px;
@@ -77,6 +78,11 @@
   --border-radius: 0.8rem;
 }
 
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 7rem;
+  }
+}
 *,
 *::before,
 *::after {
