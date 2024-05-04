@@ -64,7 +64,7 @@
   --page-width-m: 1296px;
   --page-width-s: 1024px;
   --page-width-xl: 1668px;
-  --page-width-text: 720px;
+  --page-width-text: 840px;
 
   --default-page-width: var(--page-width-l);
 
@@ -81,6 +81,7 @@
   --space-x-o: var(--space-s);
 
   --border-radius: 0.8rem;
+  --button-animation: 0.3s;
 }
 
 @media (max-width: 768px) {
@@ -113,4 +114,22 @@ pre code {
 
 h1 {
   color: var(--color-accent);
+}
+
+p a {
+  color: var(--color-text);
+  position: relative;
+  padding-right: 20px;
+}
+
+p a::after {
+  content: "\e89e";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1;
+  font-size: 0.9em;
+  text-decoration: none;
+  font-family: "Material Symbols Outlined";
 }

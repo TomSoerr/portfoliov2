@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Root from '../components/root/Root';
 import AllProjects from '../components/all-projects/AllProjects.jsx';
 import Section from '../components/section/Section.jsx';
+import Button from '../components/button/Button.jsx';
 
 export default function Home() {
   useEffect(() => {
@@ -26,10 +27,14 @@ export default function Home() {
             Stärken besonders in der Organisation und Entwicklung der Projekte.
           </p>
           <p>
-            Auf meinem GitHub Profil finden Sie zudem weitere Projekte und den
+            Auf meinem
+            {' '}
+            <a href="https://github.com/TomSoerr">GitHub Profil</a>
+            {' '}
+            finden Sie zudem weitere Projekte und den
             Quellcode der hier gezeigten Projekte.
           </p>
-
+          <Button src="/kontakt">Kontakt</Button>
         </Section>
       </header>
       <Section>
