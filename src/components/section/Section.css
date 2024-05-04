@@ -1,3 +1,5 @@
+/* Default section */
+
 .section {
   padding: 0 var(--space-x-o);
   margin: var(--space-y-o) auto;
@@ -11,8 +13,43 @@
   );
   padding: var(--space-y-i) var(--space-x-i);
   border-radius: var(--border-radius);
-  width: 100vw;
 }
+
+/* Hero section */
+
+header {
+  display: contents;
+}
+
+header .section {
+  margin-top: var(--space-xl);
+  max-width: min(
+    calc(var(--page-width-m) + 2 * var(--space-x-i)),
+    calc(100vw - 2 * var(--space-x-o))
+  );
+}
+
+header .section h1 {
+  font-size: 8rem;
+  margin: 0;
+}
+
+header .section p.bold {
+  font-size: 3rem;
+}
+
+header .section p:first-of-type {
+  margin-top: 0;
+}
+
+header .section-content {
+}
+
+/* .section p:not(:first-of-type) {
+  max-width: 65ch;
+} */
+
+/* Background section */
 
 .bg .section-content {
   background-color: var(--color-bg-2);
