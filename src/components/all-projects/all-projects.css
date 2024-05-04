@@ -24,7 +24,7 @@
 }
 
 .card h3 {
-  padding: var(--space-s) calc(var(--border-radius) * 2);
+  padding: var(--space-s) var(--space-x-i);
   margin: 0;
   font-weight: 400;
 }
