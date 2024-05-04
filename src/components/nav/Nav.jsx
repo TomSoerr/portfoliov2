@@ -47,7 +47,7 @@ export default function Nav() {
   return (
     <nav className="section bg">
       <div className="section-content">
-        <NavLink to="/">tom.soerr</NavLink>
+        <NavLink to="/">tom.stoehrer</NavLink>
         <MenuBtn />
         <NavUl
           links={[
@@ -55,7 +55,6 @@ export default function Nav() {
             { to: '/ueber-mich', name: 'Über mich' },
             { to: '/projekte', name: 'Projekte' },
             { to: '/kontakt', name: 'Kontakt' },
-            { to: '/blog', name: 'Blog' },
           ]}
         />
       </div>

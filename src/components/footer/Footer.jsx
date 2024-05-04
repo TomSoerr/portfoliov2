@@ -60,15 +60,6 @@ function Footer() {
             <li>
               <Link to="/kontakt">Kontakt</Link>
             </li>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link to="/datenschutz">Datenschutz</Link>
-            </li>
-            <li>
-              <Link to="/impressum">Impressum</Link>
-            </li>
           </ul>
         </div>
       </div>
