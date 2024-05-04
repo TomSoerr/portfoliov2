@@ -11,6 +11,11 @@ footer .section-content {
   gap: 2rem;
 }
 
+footer .section-content * {
+  margin: 0;
+  padding: 0;
+}
+
 footer ul {
   display: contents;
   padding: 0;
