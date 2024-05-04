@@ -14,11 +14,36 @@ function Footer() {
           possimus molestias eligendi voluptates id rerum!
         </p>
 
-        <address>
-          <p>MP JavaScript</p>
-          <p>123 Main St</p>
-          <p>Anytown, USA</p>
-        </address>
+        <div className="social">
+          <h3>Socials</h3>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/ueber-mich">Über mich</Link>
+            </li>
+            <li>
+              <Link to="/projekte">Projekte</Link>
+            </li>
+
+          </ul>
+        </div>
+
+        <div className="blog">
+          <h3>Blog</h3>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/ueber-mich">Über mich</Link>
+            </li>
+            <li>
+              <Link to="/projekte">Projekte</Link>
+            </li>
+          </ul>
+        </div>
 
         <div className="sitemap">
           <h3>Sitemap</h3>
@@ -27,20 +52,25 @@ function Footer() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/nav">Navigation</Link>
+              <Link to="/ueber-mich">Über mich</Link>
             </li>
             <li>
-              <Link to="/footer">Footer</Link>
+              <Link to="/projekte">Projekte</Link>
             </li>
             <li>
-              <a href="#">Plugins</a>
+              <Link to="/kontakt">Kontakt</Link>
             </li>
             <li>
-              <a href="#">Links</a>
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li>
+              <Link to="/datenschutz">Datenschutz</Link>
+            </li>
+            <li>
+              <Link to="/impressum">Impressum</Link>
             </li>
           </ul>
         </div>
-
       </div>
     </footer>
   );

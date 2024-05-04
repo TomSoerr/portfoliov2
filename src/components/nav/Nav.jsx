@@ -53,8 +53,8 @@ export default function Nav() {
           links={[
             { to: '/', name: 'Home', exact: true },
             { to: '/ueber-mich', name: 'Über mich' },
-            { to: '/kontakt', name: 'Kontakt' },
             { to: '/projekte', name: 'Projekte' },
+            { to: '/kontakt', name: 'Kontakt' },
             { to: '/blog', name: 'Blog' },
           ]}
         />
