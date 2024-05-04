@@ -55,7 +55,6 @@ export default function Nav() {
             { to: '/ueber-mich', name: 'Über mich' },
             { to: '/projekte', name: 'Projekte' },
             { to: '/kontakt', name: 'Kontakt' },
-            { to: '/blog', name: 'Blog' },
           ]}
         />
       </div>

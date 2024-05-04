@@ -11,10 +11,8 @@ import 'normalize.css';
 import Home from './sites/Home.jsx';
 import UeberMich from './sites/UeberMich.jsx';
 import Kontakt from './sites/Kontakt.jsx';
-import Blog from './sites/Blog.jsx';
 import Projekte from './sites/Projekte.jsx';
 
-import BlogWrapper from './components/BlogWrapper.jsx';
 import ProjectWrapper from './components/ProjectWrapper.jsx';
 
 import content from './content.js';
@@ -25,9 +23,7 @@ function createRouts() {
     value.forEach((element) => {
       routes.push({
         path: `/${key}/${element}`,
-        element: key === 'blog'
-          ? <BlogWrapper path={element} />
-          : <ProjectWrapper path={element} />,
+        element: <ProjectWrapper path={element} />,
       });
     });
   });
@@ -39,10 +35,6 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Home />,
-  },
-  {
-    path: '/blog',
-    element: <Blog />,
   },
   {
     path: '/projekte',
