@@ -52,7 +52,6 @@ export default function Nav() {
         <NavUl
           links={[
             { to: '/', name: 'Home', exact: true },
-            { to: '/ueber-mich', name: 'Über mich' },
             { to: '/projekte', name: 'Projekte' },
             { to: '/kontakt', name: 'Kontakt' },
           ]}

@@ -9,7 +9,6 @@ import './main.css';
 import 'normalize.css';
 
 import Home from './sites/Home.jsx';
-import UeberMich from './sites/UeberMich.jsx';
 import Kontakt from './sites/Kontakt.jsx';
 import Projekte from './sites/Projekte.jsx';
 
@@ -39,10 +38,6 @@ const router = createBrowserRouter([
   {
     path: '/projekte',
     element: <Projekte />,
-  },
-  {
-    path: '/ueber-mich',
-    element: <UeberMich />,
   },
   {
     path: '/kontakt',

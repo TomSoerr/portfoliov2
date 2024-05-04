@@ -1,0 +1,85 @@
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: var(--space-l);
+  padding: 0;
+  margin: 0 calc(-1 * var(--space-x-i));
+}
+
+.card img {
+  border-radius: var(--border-radius);
+}
+
+.card {
+  list-style: none;
+  background-color: var(--color-bg-2);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+}
+
+.card h3::after {
+  content: "\f1e1";
+  font-family: "Material Symbols Outlined";
+  vertical-align: -4px;
+}
+
+.card h3 {
+  padding: var(--space-s) calc(var(--border-radius) * 2);
+  margin: 0;
+  font-weight: 400;
+}
+
+.card a {
+  display: block;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.card a:is(:hover, :focus-visible) h3 {
+  text-decoration: underline;
+}
+
+#slider-h {
+  --column-count: 4;
+  --gap: var(--space-m);
+  display: flex;
+  overflow: hidden;
+  margin: 0 calc(-1 * var(--space-x-i));
+  padding: 0;
+  gap: var(--gap);
+  scroll-snap-type: x mandatory;
+  scroll-snap-stop: always;
+  padding-bottom: var(--space-m);
+}
+
+#slider-h .card {
+  scroll-snap-align: start;
+  align-self: flex-start;
+  min-width: calc(
+    (
+        min(
+            100vw,
+            calc(var(--default-page-width)) + var(--space-x-o) * 2 +
+              var(--space-x-i) * 2
+          ) - var(--space-x-o) * 2 - (var(--column-count) - 1) * var(--gap)
+      ) / var(--column-count)
+  );
+}
+
+@media (max-width: 1339px) {
+  #slider-h {
+    --column-count: 3;
+  }
+}
+
+@media (max-width: 999px) {
+  #slider-h {
+    --column-count: 2;
+  }
+}
+
+@media (max-width: 659px) {
+  #slider-h {
+    --column-count: 1;
+  }
+}
