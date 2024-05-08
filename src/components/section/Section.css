@@ -1,19 +1,19 @@
 /* Default section */
 
+.section-outer {
+  max-width: min(calc(var(--default-page-width) + 2 * var(--space-x-o)));
+  margin: 0 auto;
+}
+
 .section {
   padding: 0 var(--space-x-o);
-  margin: var(--space-y-o) auto;
-  width: fit-content;
+  margin: var(--space-y-o) 0;
+  width: 100%;
 }
 
 .section-content {
-  max-width: min(
-    calc(var(--default-page-width) + 2 * var(--space-x-i)),
-    calc(100vw - 2 * var(--space-x-o))
-  );
   padding: var(--space-y-i) var(--space-x-i);
   border-radius: var(--border-radius);
-  width: 100vw;
 }
 
 /* Hero section */
@@ -24,13 +24,6 @@ header {
 
 header .section {
   margin-top: var(--space-xl);
-}
-
-header .section-content {
-  max-width: min(
-    calc(var(--page-width-text) + 2 * var(--space-x-i)),
-    calc(100vw - 2 * var(--space-x-o))
-  );
 }
 
 header .section h1 {

@@ -1,0 +1,27 @@
+@media (min-width: 1000px) {
+  .project-wrapper .section-outer {
+    padding-left: 300px;
+  }
+
+  #slider-v {
+    display: flex;
+  }
+
+  .project-wrapper main > :nth-child(2) {
+    display: none;
+  }
+}
+
+.project-wrapper main > :nth-child(1) .section {
+  margin-top: 0;
+}
+
+.project-wrapper main > :nth-child(1) .section-content {
+  padding-top: 0;
+}
+
+.hero-img {
+  border-radius: var(--border-radius);
+  margin: 0 calc(-1 * var(--space-x-i));
+  max-width: calc(var(--space-x-i) * 2 + 100%);
+}

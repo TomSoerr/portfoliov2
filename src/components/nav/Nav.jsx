@@ -45,17 +45,19 @@ function MenuBtn() {
 
 export default function Nav() {
   return (
-    <nav className="section bg">
-      <div className="section-content">
-        <NavLink to="/">tom.soerr</NavLink>
-        <MenuBtn />
-        <NavUl
-          links={[
-            { to: '/', name: 'Home', exact: true },
-            { to: '/projekte', name: 'Projekte' },
-            { to: '/kontakt', name: 'Kontakt' },
-          ]}
-        />
+    <nav className="section-outer">
+      <div className="section bg">
+        <div className="section-content">
+          <NavLink to="/">tom.soerr</NavLink>
+          <MenuBtn />
+          <NavUl
+            links={[
+              { to: '/', name: 'Home', exact: true },
+              { to: '/projekte', name: 'Projekte' },
+              { to: '/kontakt', name: 'Kontakt' },
+            ]}
+          />
+        </div>
       </div>
     </nav>
   );

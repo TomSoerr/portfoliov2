@@ -1,11 +1,4 @@
-#grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
-  gap: var(--space-l);
-  padding: 0;
-  margin: 0 calc(-1 * var(--space-x-i));
-}
-
+/* Card */
 .card img {
   border-radius: var(--border-radius);
 }
@@ -33,17 +26,34 @@
   display: block;
   color: var(--color-text);
   text-decoration: none;
+  padding: 0;
+}
+
+.card a::after {
+  display: none;
 }
 
 .card a:is(:hover, :focus-visible) h3 {
   text-decoration: underline;
 }
 
+/* Grid */
+#grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: var(--space-l) var(--space-m);
+  padding: 0;
+  margin: 0 calc(-1 * var(--space-x-i));
+}
+
+/* Slicer horizontal */
+
 #slider-h {
   --column-count: 4;
   --gap: var(--space-m);
   display: flex;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
   margin: 0 calc(-1 * var(--space-x-i));
   padding: 0;
   gap: var(--gap);
@@ -52,34 +62,59 @@
   padding-bottom: var(--space-m);
 }
 
+#slider-h.scroll {
+  overflow-x: scroll;
+}
+
 #slider-h .card {
   scroll-snap-align: start;
   align-self: flex-start;
   min-width: calc(
-    (
-        min(
-            100vw,
-            calc(var(--default-page-width)) + var(--space-x-o) * 2 +
-              var(--space-x-i) * 2
-          ) - var(--space-x-o) * 2 - (var(--column-count) - 1) * var(--gap)
-      ) / var(--column-count)
+    (100% - (var(--column-count) - 1) * var(--gap)) / var(--column-count)
   );
 }
 
-@media (max-width: 1339px) {
+@media (max-width: 1279px) {
   #slider-h {
     --column-count: 3;
   }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 959px) {
   #slider-h {
     --column-count: 2;
   }
 }
 
-@media (max-width: 659px) {
+@media (max-width: 639px) {
   #slider-h {
     --column-count: 1;
   }
+}
+
+/* Slider vertical */
+#slider-v::-webkit-scrollbar {
+  display: none;
+}
+
+#slider-v {
+  scrollbar-width: none;
+  padding: var(--space-x-o) 0 calc(var(--space-x-o) * 2) 0;
+  margin: 0;
+
+  width: calc(300px - var(--space-x-o));
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  left: max(
+    calc(
+      (100vw - var(--default-page-width) + 2 * var(--space-x-o)) / 2 -
+        var(--space-x-o)
+    ),
+    var(--space-x-o)
+  );
+  height: 100vh;
+  gap: var(--space-m);
 }
