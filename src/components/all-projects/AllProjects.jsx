@@ -15,7 +15,7 @@ export default function AllProjects({ type, scroll }) {
         <li className="card" key={element}>
           <Link to={`/projekte/${element}`}>
             <Image
-              src={`/thumbnails/${element}.png`}
+              src={`thumbnails/${element}.png`}
               alt={beautifyName(element)}
             />
             <h3>

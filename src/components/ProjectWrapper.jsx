@@ -44,7 +44,7 @@ export default function ProjectWrapper({ path }) {
       <AllProjects type="slider-v" />
       <Root>
         <Section>
-          <Image className="hero-img" src={`/thumbnails/${path}.png`} alt={`${path} Hero Bild`} />
+          <Image className="hero-img" src={`thumbnails/${path}.png`} alt={`${path} Hero Bild`} />
           <SimpleMarkdown data={data} />
         </Section>
         <Section>
