@@ -5,5 +5,5 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
   assetsInclude: ["**/*.md"],
-  base: mode === "production" ? "https://tomsoerr.github.io/portfoliov2/" : "/",
+  base: mode === "production" ? "./" : "/",
 }));
