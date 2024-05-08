@@ -102,7 +102,7 @@
   padding: var(--space-x-o) 0 calc(var(--space-x-o) * 2) 0;
   margin: 0;
 
-  width: calc(300px - var(--space-x-o));
+  width: calc(var(--sidebar-width) - var(--space-x-o));
   display: none;
   flex-direction: column;
   position: fixed;
