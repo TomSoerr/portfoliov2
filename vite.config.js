@@ -5,5 +5,8 @@ import react from "@vitejs/plugin-react";
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
   assetsInclude: ["**/*.md"],
-  base: "/portfoliov2/",
+  base: "/",
+  server: {
+    historyApiFallback: true,
+  },
 }));

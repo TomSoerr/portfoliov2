@@ -1,16 +1,12 @@
-import React, { useEffect } from 'react';
-import Root from '../components/root/Root';
+import React from 'react';
+import Main from '../components/main/Main';
 import Section from '../components/section/Section';
 import AllProjects from '../components/all-projects/AllProjects';
 import Button from '../components/button/Button';
 
 export default function Home() {
-  useEffect(() => {
-    document.title = 'Tom\'s Portfolio';
-  }, []);
-
   return (
-    <Root>
+    <Main>
       <header>
         <Section>
           <h1>Moin Moin</h1>
@@ -51,6 +47,6 @@ export default function Home() {
           <Button src="/projekte">Alle Projekte</Button>
         </div>
       </Section>
-    </Root>
+    </Main>
   );
 }

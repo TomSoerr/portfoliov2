@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import SimpleMarkdown from './SimpleMarkdown';
-import Root from './root/Root';
+import Main from './main/Main';
 import Section from './section/Section';
 import Image from './image/Image';
 import AllProjects from './all-projects/AllProjects';
 import './project-wrapper.css';
+import beautifyName from './helper/beautifyName';
 
 export default function ProjectWrapper({ path }) {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
+
+  useEffect(() => {
+    document.title = beautifyName(path);
+  }, []);
 
   useEffect(() => {
     document.body.classList.add('project-wrapper');
@@ -26,23 +31,23 @@ export default function ProjectWrapper({ path }) {
 
   if (error) {
     return (
-      <Root>
+      <Main>
         <Section>
           Error loading file:
           {path}
         </Section>
-      </Root>
+      </Main>
     );
   }
 
   if (!data) {
-    return <Root><Section>Loading...</Section></Root>;
+    return <Main><Section>Loading...</Section></Main>;
   }
 
   return (
     <>
       <AllProjects type="slider-v" />
-      <Root>
+      <Main>
         <Section>
           <Image className="hero-img" src={`thumbnails/${path}.png`} alt={`${path} Hero Bild`} />
           <SimpleMarkdown data={data} />
@@ -51,7 +56,7 @@ export default function ProjectWrapper({ path }) {
           <h2>Weitere Projekte</h2>
           <AllProjects type="slider-h" scroll />
         </Section>
-      </Root>
+      </Main>
     </>
   );
 }

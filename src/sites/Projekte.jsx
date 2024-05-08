@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Root from '../components/root/Root';
+import Main from '../components/main/Main.jsx';
 import AllProjects from '../components/all-projects/AllProjects.jsx';
 import Section from '../components/section/Section.jsx';
 import Button from '../components/button/Button.jsx';
@@ -9,7 +9,7 @@ export default function Home() {
     document.title = 'Tom\'s Projekte';
   }, []);
   return (
-    <Root>
+    <Main>
       <header>
         <Section>
           <h1>Meine Projekte</h1>
@@ -41,6 +41,6 @@ export default function Home() {
         <h2>Alle Projekte</h2>
         <AllProjects type="grid" />
       </Section>
-    </Root>
+    </Main>
   );
 }

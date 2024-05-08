@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Root from '../components/root/Root';
+import Main from '../components/main/Main';
 import Section from '../components/section/Section';
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
   }, []);
 
   return (
-    <Root>
+    <Main>
       <Section>
         <form>
           <label htmlFor="name">
@@ -34,6 +34,6 @@ export default function Home() {
           <input type="submit" value="Submit" />
         </form>
       </Section>
-    </Root>
+    </Main>
   );
 }
