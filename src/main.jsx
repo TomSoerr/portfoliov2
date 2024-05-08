@@ -30,21 +30,26 @@ function createRouts() {
   return routes;
 }
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <Home />,
+    },
+    {
+      path: '/projekte',
+      element: <Projekte />,
+    },
+    {
+      path: '/kontakt',
+      element: <Kontakt />,
+    },
+    ...createRouts(),
+  ],
   {
-    path: '/',
-    element: <Home />,
+    basename: '/portfoliov2',
   },
-  {
-    path: '/projekte',
-    element: <Projekte />,
-  },
-  {
-    path: '/kontakt',
-    element: <Kontakt />,
-  },
-  ...createRouts(),
-]);
+);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

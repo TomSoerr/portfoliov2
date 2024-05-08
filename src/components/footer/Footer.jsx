@@ -3,12 +3,14 @@ import { Link } from 'react-router-dom';
 import './Footer.css';
 
 function Footer() {
+  const baseUrl = import.meta.env.BASE_URL;
+
   return (
     <footer className="section-outer">
       <div className="section bg">
         <div className="section-content">
 
-          <img src="/img/logo-dark.svg" alt="Logo" />
+          <img src={`${baseUrl}img/logo-dark.svg`} alt="Logo" />
           <p className="about">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
             maiores cum dolorem neque ullam aperiam, ut tempore molestias? Nobis
