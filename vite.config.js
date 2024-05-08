@@ -6,4 +6,5 @@ export default defineConfig(({ mode }) => ({
   plugins: [react()],
   assetsInclude: ["**/*.md"],
   // base: mode === "production" ? "/portfoliov2/" : "/",
+  base: "/portfoliov2/",
 }));
