@@ -3,10 +3,7 @@ import { Link } from 'react-router-dom';
 import Image from '../image/Image.jsx';
 import content from '../../content.js';
 import './all-projects.css';
-
-function beautifyName(name) {
-  return name.split('-').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-}
+import beautifyName from '../helper/beautifyName.js';
 
 export default function AllProjects({ type, scroll }) {
   return (

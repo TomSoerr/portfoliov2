@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {
-  createBrowserRouter,
-  RouterProvider,
+  HashRouter, Routes, Route,
 } from 'react-router-dom';
 
 import './main.css';
@@ -12,47 +11,40 @@ import Home from './sites/Home.jsx';
 import Kontakt from './sites/Kontakt.jsx';
 import Projekte from './sites/Projekte.jsx';
 
+import ScrollToTop from './components/ScrollToTop.jsx';
+import Nav from './components/nav/Nav.jsx';
+import Footer from './components/footer/Footer.jsx';
+
 import ProjectWrapper from './components/ProjectWrapper.jsx';
 
 import content from './content.js';
 
-function createRouts() {
+function createRoutes() {
   const routes = [];
   Object.entries(content).forEach(([key, value]) => {
     value.forEach((element) => {
-      routes.push({
-        path: `/${key}/${element}`,
-        element: <ProjectWrapper path={element} />,
-      });
+      routes.push(
+        <Route key={key} path={`/${key}/${element}`} element={<ProjectWrapper path={element} />} />,
+      );
     });
   });
 
   return routes;
 }
 
-const router = createBrowserRouter(
-  [
-    {
-      path: '/',
-      element: <Home />,
-    },
-    {
-      path: '/projekte',
-      element: <Projekte />,
-    },
-    {
-      path: '/kontakt',
-      element: <Kontakt />,
-    },
-    ...createRouts(),
-  ],
-  {
-    basename: '/portfoliov2/',
-  },
-);
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <HashRouter>
+      <ScrollToTop />
+      <Nav />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/projekte" element={<Projekte />} />
+        <Route path="/kontakt" element={<Kontakt />} />
+        {createRoutes()}
+      </Routes>
+      <Footer />
+    </HashRouter>
+
   </React.StrictMode>,
 );
