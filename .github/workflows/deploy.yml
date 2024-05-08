@@ -2,28 +2,30 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main # replace with your default branch if not 'main'
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
         with:
-          node-version: 18
+          persist-credentials: false
 
-      - name: Install Dependencies
-        run: npm ci
+      - name: Install and Build 🔧
+        run: |
+          npm install
+          npm run build
 
-      - name: Build
-        run: npm run build
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          source-directory: 'dist'
+          destination-github-username: 'TomSoerr'
+          destination-repository-name: 'TomSoerr.github.io'
+          user-email: tomix2004@gmail.com
+          target-branch: main
