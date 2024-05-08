@@ -36,6 +36,7 @@ nav .section-content > a {
   color: var(--color-text);
   text-decoration: none;
   font-size: 1.8rem;
+  transition: all 0.5s cubic-bezier(0, 1, 0.44, 1);
 }
 
 nav .section-content > a:where(:hover, :focus-visible) {
