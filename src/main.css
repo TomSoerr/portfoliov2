@@ -82,6 +82,7 @@
 
   --border-radius: 0.8rem;
   --button-animation: 0.3s;
+  --sidebar-width: 27.5rem;
 }
 
 @media (max-width: 768px) {

@@ -1,6 +1,6 @@
 @media (min-width: 1000px) {
   .project-wrapper .section-outer {
-    padding-left: 300px;
+    padding-left: var(--sidebar-width);
   }
 
   #slider-v {
