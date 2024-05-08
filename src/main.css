@@ -108,21 +108,22 @@ body {
   background-color: var(--color-bg-1);
 }
 
-pre code {
-  /* font-size: 1.6rem !important; */
-}
-
 h1 {
   color: var(--color-accent);
 }
 
-p a {
+section a {
   color: var(--color-text);
   position: relative;
   padding-right: 20px;
+  text-decoration: none;
 }
 
-p a::after {
+section a:hover {
+  text-decoration: underline;
+}
+
+section a::after {
   content: "\e89e";
   position: absolute;
   right: 0;

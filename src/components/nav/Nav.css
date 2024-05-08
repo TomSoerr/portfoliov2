@@ -1,20 +1,24 @@
-nav.section {
+nav.section-outer {
   position: fixed;
   z-index: 100;
   top: 0;
   left: 0;
   right: 0;
+  background-color: transparent;
+}
+
+nav .section {
+  background-color: transparent;
   margin: var(--space-x-o) auto;
 }
 
-nav.bg .section-content {
+nav.section-outer .section-content {
   padding-right: 0;
   height: calc(var(--nav-height) - 2 * var(--space-x-o));
   background-color: var(--color-bg-2);
   background-color: color-mix(in srgb, var(--color-bg-2), transparent 60%);
   -webkit-backdrop-filter: blur(0.5rem);
   backdrop-filter: blur(0.5rem);
-
   display: flex;
   gap: 2rem;
   align-items: center;
@@ -22,7 +26,6 @@ nav.bg .section-content {
   padding-bottom: 0;
   border-radius: 6rem;
   position: relative;
-  width: 100vw;
 }
 
 /* Logo */

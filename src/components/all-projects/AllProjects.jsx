@@ -8,14 +8,14 @@ function beautifyName(name) {
   return name.split('-').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 }
 
-export default function AllProjects({ type }) {
+export default function AllProjects({ type, scroll }) {
   return (
-    <ul id={type}>
+    <ul id={type} className={(scroll) ? 'scroll' : ''}>
       {content.projekte.map((element) => (
         <li className="card" key={element}>
           <Link to={`/projekte/${element}`}>
             <Image
-              src={`thumbnails/${element}.png`}
+              src={`/thumbnails/${element}.png`}
               alt={beautifyName(element)}
             />
             <h3>

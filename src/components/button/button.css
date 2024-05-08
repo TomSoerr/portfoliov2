@@ -16,7 +16,16 @@
   color: var(--color-text);
   text-decoration: none;
   display: block;
+  padding: 0;
   transition: all var(--button-animation) ease-in-out;
+}
+
+.button a::after {
+  display: none;
+}
+
+.button a:is(:hover, :focus-visible) {
+  text-decoration: none;
 }
 
 .button::after {
