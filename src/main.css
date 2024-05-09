@@ -119,7 +119,7 @@ body {
   background-color: var(--color-bg-1);
 }
 
-h1 {
+header h1 {
   color: var(--color-accent);
 }
 

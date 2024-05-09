@@ -1,29 +1,18 @@
-# My “Weather App” Project
+# Odin Wetter App Projekt
 
-## Description
+## Aufgabe
 
-In this project from “The Odin Project” I create a simple weather app with
-the api from openweathermap.org<br>
-This project has:
+In diesem Projekt habe ich den Umgang mit APIs gelernt. Hierfür habe ich die Current Weather, 3-hour Forecast 5 days, and Geocoding API von openweathermap.org genutzt. 
 
-- a search bar that allows the user to search for a city,
-- a fahrenheit/celsius toggle button,
-- a current weather card and
-- a forecast card.
+## Wetter App
 
-The forecast is for one day.
+Die App zeigt das aktuelle Wetter und die Vorhersage für die nächsten Stunden. Es gibt die Möglichkeit, über eine Suchleiste nach anderen Orten zu suchen. Ebenfalls kann die Temperatureinheit zu Fahrenheit umgestellt werden. Die Icons wurden von mir erstellt.
+Für die Website habe ich eigene Icons erstellt. 
 
 ## Links
 
-- [Live Preview](https://tomsoerr.github.io/odin-weather-app/)
-- Link to the [Assignment](https://www.theodinproject.com/lessons/node-path-javascript-weather-app)
-- See my next [Project](https://github.com/TomSoerr/odin-testing-practice)
+- [Live Vorschau](https://tomsoerr.github.io/odin-weather-app/)
+- [Quellcode](https://github.com/TomSoerr/odin-weather-app)
+- [Aufgabe](https://www.theodinproject.com/lessons/node-path-javascript-weather-app)
 
-## Notes
 
-I use the free Current Weather, 3-hour Forecast 5 days, and Geocoding APIs
-from openweathermap.org.
-
-If there are any legal issues please contact me.
-
-The icons are by myself.
