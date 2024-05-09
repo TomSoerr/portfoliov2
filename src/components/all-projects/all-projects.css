@@ -1,6 +1,9 @@
 /* Card */
 .card img {
   border-radius: var(--border-radius);
+  aspect-ratio: 1.72 / 1;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card {
@@ -94,16 +97,16 @@
 
 #slider-v {
   scrollbar-width: none;
-  padding: var(--space-x-o) 0 calc(var(--space-x-o) * 2) 0;
+  padding: var(--nav-height) 0 calc(var(--space-x-o) * 2)
+    calc(var(--space-m) - var(--space-x-o));
   margin: 0;
-
   width: calc(var(--sidebar-width) - var(--space-x-o));
   display: none;
   flex-direction: column;
   position: fixed;
   overflow-y: scroll;
   top: 0;
-  left: max(
+  right: max(
     calc(
       (100vw - var(--default-page-width) + 2 * var(--space-x-o)) / 2 -
         var(--space-x-o)
@@ -112,4 +115,25 @@
   );
   height: 100vh;
   gap: var(--space-m);
+}
+
+#slider-v::before {
+  content: "Weitere Projekte";
+  position: fixed;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0 var(--space-x-i);
+  background-color: var(--color-bg-2);
+  border-radius: 7rem;
+  border: 1px solid var(--color-border);
+  top: var(--space-x-o);
+  width: calc(var(--sidebar-width) - var(--space-m));
+  height: calc(var(--nav-height) - var(--space-x-o) * 2);
+  background-color: var(--color-bg-2);
+  background-color: color-mix(in srgb, var(--color-bg-2), transparent 60%);
+  -webkit-backdrop-filter: blur(0.5rem);
+  backdrop-filter: blur(0.5rem);
 }
