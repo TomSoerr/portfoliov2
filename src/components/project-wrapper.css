@@ -1,6 +1,6 @@
 @media (min-width: 1000px) {
   .project-wrapper .section-outer {
-    padding-left: var(--sidebar-width);
+    padding-right: var(--sidebar-width);
   }
 
   #slider-v {
@@ -24,4 +24,5 @@
   border-radius: var(--border-radius);
   margin: 0 calc(-1 * var(--space-x-i));
   max-width: calc(var(--space-x-i) * 2 + 100%);
+  aspect-ratio: 1.72 / 1;
 }
