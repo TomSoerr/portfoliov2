@@ -10,7 +10,7 @@ export default function AllProjects({ type, scroll }) {
     <ul id={type} className={(scroll) ? 'scroll' : ''}>
       {content.projekte.map((element) => (
         <li className="card" key={element}>
-          <Link to={`/projekte/${element}`}>
+          <Link className="hide" to={`/projekte/${element}`}>
             <Image
               src={`thumbnails/${element}.png`}
               alt={beautifyName(element)}

@@ -4,7 +4,7 @@ import AllProjects from '../components/all-projects/AllProjects.jsx';
 import Section from '../components/section/Section.jsx';
 import Button from '../components/button/Button.jsx';
 
-export default function Home() {
+export default function Projekte() {
   useEffect(() => {
     document.title = 'Tom\'s Projekte';
   }, []);

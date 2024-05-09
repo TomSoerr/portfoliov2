@@ -5,15 +5,10 @@ footer.section {
 footer .section-content {
   display: grid;
   grid:
-    "logo . . ."
-    "about about address sitemap" /
-    1fr 1fr 1fr 1fr;
-  gap: 2rem;
-}
-
-footer .section-content * {
-  margin: 0;
-  padding: 0;
+    "logo social legal projekte"
+    "about . . projekte"/
+    2fr 1fr 1fr 1fr;
+  gap: var(--space-m);
 }
 
 footer ul {
@@ -33,23 +28,52 @@ footer ul li a {
   color: var(--color-text);
 }
 
-footer ul li a:hover {
+footer h3 {
+  margin-bottom: var(--space-xs);
+}
+
+footer ul li a:is(:hover, :focus-visible) {
   text-decoration: underline;
 }
 
 footer img {
   grid-area: logo;
-  margin-bottom: 4rem;
+  max-height: 25rem;
 }
 
-footer address {
-  grid-area: address;
+footer .legal {
+  grid-area: legal;
 }
 
 footer .about {
   grid-area: about;
 }
 
-footer .sitemap {
-  grid-area: sitemap;
+footer .projekte {
+  grid-area: projekte;
+}
+
+footer .social {
+  grid-area: social;
+}
+
+@media (max-width: 768px) {
+  footer .section-content {
+    grid:
+      "logo social  projekte"
+      "logo legal  projekte"
+      "about legal  projekte"/
+      1.5fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  footer .section-content {
+    grid:
+      "social logo "
+      "projekte projekte"
+      "legal legal"
+      "about about"/
+      1.5fr 1fr;
+  }
 }

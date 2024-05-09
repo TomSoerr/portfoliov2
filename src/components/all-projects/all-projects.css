@@ -26,11 +26,6 @@
   display: block;
   color: var(--color-text);
   text-decoration: none;
-  padding: 0;
-}
-
-.card a::after {
-  display: none;
 }
 
 .card a:is(:hover, :focus-visible) h3 {

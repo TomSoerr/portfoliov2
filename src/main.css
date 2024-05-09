@@ -115,16 +115,21 @@ h1 {
 
 section a {
   color: var(--color-text);
-  position: relative;
-  padding-right: 20px;
-  text-decoration: none;
-}
-
-section a:hover {
   text-decoration: underline;
 }
 
-section a::after {
+section a:not(.hide),
+.link {
+  position: relative;
+  padding-right: 1em;
+}
+
+section a:hover {
+  text-decoration: none;
+}
+
+section a:not(.hide)::after,
+.link::after {
   content: "\e89e";
   position: absolute;
   right: 0;
