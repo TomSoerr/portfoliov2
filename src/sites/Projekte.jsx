@@ -13,7 +13,7 @@ export default function Projekte() {
       <header>
         <Section>
           <h1>Meine Projekte</h1>
-          <p className="bold">
+          <p>
             Ich habe einige meiner besten Projekte zusammengetragen und
             aufbereitet. So können Sie einen Einblick in meine Arbeitsweise
             erhalten.

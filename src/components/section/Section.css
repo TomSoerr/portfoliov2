@@ -39,6 +39,26 @@ header .section p {
   max-width: 65ch;
 }
 
+@media (max-width: 768px) {
+  header .section h1 {
+    font-size: 6rem;
+  }
+
+  header .section p {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 425px) {
+  header .section h1 {
+    font-size: 4rem;
+  }
+
+  header .section p {
+    font-size: 1.8rem;
+  }
+}
+
 /* Background section */
 
 .bg .section-content {

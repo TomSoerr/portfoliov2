@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Main from '../components/main/Main';
 import Section from '../components/section/Section';
+import Form from '../components/form/Form';
 
 export default function Kontakt() {
   useEffect(() => {
@@ -9,25 +10,16 @@ export default function Kontakt() {
 
   return (
     <Main>
+      <header id="contact-header">
+        <Section>
+          <h1>Kontaktformular</h1>
+        </Section>
+      </header>
       <Section>
-        <form>
-          <label htmlFor="name">
-            Name:
-            <input type="text" id="name" name="name" required />
-          </label>
-          <label htmlFor="message">
-            Message:
-            <textarea id="message" name="message" required />
-          </label>
-          <span>Verbessen Sie nicht zu schreiben, wie ich Ihnen antworten soll.</span>
-          <label htmlFor="verification">
-            Bitte zähle die folgenden Zahlen zur Verifikation zusammen:
-            {' '}
-            <span>1,1 + 1,9</span>
-            <input type="number" id="verification" name="verification" required />
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
+        <p className="contact-form-align">
+          Alle Felder mit einem * sind Pflichtfelder.
+        </p>
+        <Form />
       </Section>
     </Main>
   );
