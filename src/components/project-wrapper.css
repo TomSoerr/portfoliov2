@@ -20,9 +20,20 @@
   padding-top: 0;
 }
 
+/* Images */
+
 .hero-img {
   border-radius: var(--border-radius);
   margin: 0 calc(-1 * var(--space-x-i));
   max-width: calc(var(--space-x-i) * 2 + 100%);
   aspect-ratio: 1.72 / 1;
+}
+
+.project-wrapper main > :nth-child(1) .section img:not(.hero-img) {
+  width: 200px;
+  height: auto;
+}
+
+.project-wrapper main > :nth-child(1) .section p {
+  max-width: 75ch;
 }

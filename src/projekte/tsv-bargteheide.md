@@ -1,4 +1,10 @@
+# Betriebspraktikum – CvH Design
 
-# TSV Bargteheide
+In meiner Zeit bei CvH Design hatte ich die Aufgabe, für den TSV-Bargteheide eine neue Website zu erstellen. 
 
-Der TSV Bargteheide ist ein Sportverein in Bargteheide. Der Verein wurde 1862 gegründet und hat heute über 3.000 Mitglieder. Der TSV Bargteheide bietet eine Vielzahl von Sportarten an, darunter Fußball, Handball, Volleyball, Basketball, Tennis, Tischtennis, Leichtathletik, Turnen, Gymnastik, Badminton, Schwimmen und Tanzen.
+Zuerst gestaltete ich in Adobe XD mehrere Mockups, die ich dann dem Vorstand vorstellte. Anschließend wurde die Website dann mit WordPress umgesetzt. Die Umsetzung umfasste die Programmierung von Komponenten mit PHP, die dann in den WordPress-Workflow integriert wurden. Am Ende leitete ich dann eine Schulung für die Mitarbeiter:innen vom Verein.
+
+## Links
+
+- [Stage](https://tsv.cvh-stage.de/) (evtl. nicht mehr online)
+- [Production](https://www.tsv-bargteheide.de/) (evtl. noch nicht online)
