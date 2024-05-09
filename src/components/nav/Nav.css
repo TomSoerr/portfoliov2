@@ -247,7 +247,7 @@ nav button.open div::before {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-right: 1px solid var(--color-border);
-    width: min(30rem, calc((100vw - 2 * var(--space-x-o)) - 12rem));
+    width: min(30rem, calc((100vw - 2 * var(--space-x-o)) - 16rem));
     max-width: 100%;
   }
 
@@ -268,7 +268,7 @@ nav button.open div::before {
     top: calc(var(--nav-height) - 2 * var(--space-x-o) - 2px);
     right: 0;
     background-color: var(--color-bg-2);
-    width: min(30rem, calc((100vw - 2 * var(--space-x-o)) - 12.3rem));
+    width: min(30rem, calc((100vw - 2 * var(--space-x-o)) - 16rem));
     min-width: max-content;
     height: auto;
     border: 1px solid var(--color-border);

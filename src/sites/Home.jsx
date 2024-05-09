@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Main from '../components/main/Main';
 import Section from '../components/section/Section';
 import AllProjects from '../components/all-projects/AllProjects';
 import Button from '../components/button/Button';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = 'Tom\'s Portfolio';
+  }, []);
   return (
     <Main>
       <header>

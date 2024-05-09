@@ -5,7 +5,7 @@ import './button.css';
 export default function Button({ children, src }) {
   return (
     <div className="button">
-      <Link to={src}>
+      <Link className="hide" to={src}>
         {children}
       </Link>
     </div>

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import Main from '../components/main/Main';
 import Section from '../components/section/Section';
 
-export default function Home() {
+export default function Kontakt() {
   useEffect(() => {
     document.title = 'Kontakt';
   }, []);
@@ -15,21 +15,16 @@ export default function Home() {
             Name:
             <input type="text" id="name" name="name" required />
           </label>
-          <label htmlFor="email">
-            E-Mail:
-            <input type="email" id="email" name="email" required />
-          </label>
-          <label htmlFor="phone">
-            Telefon:
-            <input type="tel" id="phone" name="phone" />
-          </label>
           <label htmlFor="message">
             Message:
             <textarea id="message" name="message" required />
           </label>
+          <span>Verbessen Sie nicht zu schreiben, wie ich Ihnen antworten soll.</span>
           <label htmlFor="verification">
-            Human verification (please enter the number 10):
-            <input type="number" id="verification" name="verification" min="10" max="10" required />
+            Bitte zähle die folgenden Zahlen zur Verifikation zusammen:
+            {' '}
+            <span>1,1 + 1,9</span>
+            <input type="number" id="verification" name="verification" required />
           </label>
           <input type="submit" value="Submit" />
         </form>
