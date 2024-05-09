@@ -10,6 +10,7 @@ nav.section-outer {
 nav .section {
   background-color: transparent;
   margin: var(--space-x-o) auto;
+  --radius: calc((var(--nav-height) - 2 * var(--space-x-o)) / 2);
 }
 
 nav.section-outer .section-content {
@@ -24,7 +25,7 @@ nav.section-outer .section-content {
   align-items: center;
   padding-top: 0;
   padding-bottom: 0;
-  border-radius: 6rem;
+  border-radius: var(--radius);
   position: relative;
 }
 
@@ -55,7 +56,7 @@ nav ul {
   margin: 0;
   height: 100%;
   align-items: center;
-  border-radius: 3rem;
+  border-radius: var(--radius);
   background-color: var(--color-bg-2);
   border-left: 1px solid var(--color-border);
 }
@@ -176,10 +177,10 @@ nav button {
   outline: none;
   margin: 0;
   padding: 0;
-  height: calc(var(--nav-height) - 2rem);
+  height: calc(var(--nav-height) - 2 * var(--space-x-o));
   width: calc((var(--nav-height) - 2rem) * 1.5);
   background-color: var(--color-bg-2);
-  border-radius: 2.5rem;
+  border-radius: var(--radius);
   transform: translateX(1px);
   border: thin solid var(--color-border);
   position: relative;
@@ -306,17 +307,25 @@ nav button.open div::before {
   }
 
   /* nav item if hover */
-  nav button.open + ul li a:where(:hover, :focus-visible) {
+  nav button.open + ul li a:where(.active) {
+    /* :where(:hover, :focus-visible, .active) for hover effect*/
     transform: translateX(-1.5rem);
     transition: all 0.8s cubic-bezier(0, 1, 0.44, 1);
     outline: 0;
   }
 
   /* nav item hover circle if hover */
-  nav button.open + ul li a:where(:hover, :focus-visible)::after {
+  nav button.open + ul li a:where(.active)::after {
+    /* :where(:hover, :focus-visible, .active) for hover effect*/
     width: 1rem;
     height: 1rem;
     transform: translate(1.5rem, 50%);
     outline: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  nav .section-content {
+    padding-left: var(--space-m);
   }
 }
