@@ -184,6 +184,7 @@ nav button {
   border: thin solid var(--color-border);
   position: relative;
   cursor: pointer;
+  color: var(--color-text);
 }
 
 nav button:where(:hover, :focus-visible) {

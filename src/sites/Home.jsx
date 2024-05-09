@@ -13,7 +13,7 @@ export default function Home() {
       <header>
         <Section>
           <h1>Moin Moin</h1>
-          <p className="bold">
+          <p>
             Ich bin Tom, ein self-taught Frontend-Webentwickler und
             Screendesigner aus Norddeutschland. Hier finden Sie meine größten
             Projekte, seitdem ich 2021 angefangen habe, programmieren zu lernen.

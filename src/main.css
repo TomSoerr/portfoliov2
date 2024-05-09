@@ -87,7 +87,17 @@
 
 @media (max-width: 768px) {
   :root {
+    --root-space: 0.9rem;
+    --space-x-i: calc(var(--space-m) * 0.8);
     --nav-height: 7rem;
+  }
+}
+
+@media (max-width: 425px) {
+  :root {
+    --root-space: 0.85rem;
+    --space-x-i: calc(var(--space-m) * 0.6);
+    --space-x-o: calc(var(--space-s) * 0.7);
   }
 }
 
@@ -113,6 +123,10 @@ h1 {
   color: var(--color-accent);
 }
 
+:where(h1, h2, h3, h4, h5, h6) {
+  hyphens: auto;
+}
+
 section a {
   color: var(--color-text);
   text-decoration: underline;
@@ -122,6 +136,7 @@ section a:not(.hide),
 .link {
   position: relative;
   padding-right: 1em;
+  text-wrap: nowrap;
 }
 
 section a:hover {

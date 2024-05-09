@@ -1,0 +1,130 @@
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 65ch;
+  --gap: var(--space-m);
+}
+
+#contact-header h1 {
+  margin-bottom: 0;
+}
+
+#contact-header .section-content {
+  padding-bottom: 0;
+}
+
+#contact-form label.default {
+  position: relative;
+  background-color: var(--color-bg-2);
+  border: 1px solid var(--color-border);
+  padding: 2.2rem 1rem 0.5rem;
+  border-radius: var(--border-radius);
+  transition: all ease-in-out var(--button-animation);
+}
+
+#contact-form label.default span {
+  position: absolute;
+  top: 0.6rem;
+  left: 1rem;
+  font-size: 1.4rem;
+  opacity: 0.6;
+}
+
+#contact-form label.default:is(:focus-within, :hover) {
+  border-color: var(--color-accent);
+}
+
+#contact-form label.default:is(:focus-within, :hover) span {
+  opacity: 1;
+}
+
+.contact-form-align {
+  margin-left: 1rem;
+  opacity: 0.6;
+}
+
+#contact-form label.default :is(input, textarea) {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: var(--color-text);
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+#contact-form label.default textarea {
+  resize: vertical;
+  min-height: 10rem;
+}
+
+#contact-form label[for="message"] {
+  margin-top: var(--gap);
+  margin-bottom: calc(var(--gap) / 2);
+}
+
+#contact-form label[for="privacy"] {
+  margin: var(--gap) 0;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: start;
+  gap: var(--space-s);
+}
+
+#contact-form
+  label[for="privacy"]:is(:focus-within, :hover)
+  input:not(:checked) {
+  border-color: var(--color-accent);
+}
+
+#contact-form label[for="privacy"] input {
+  margin: 0;
+  margin-top: 0rem;
+  border: none;
+  background-color: var(--color-bg-2);
+  border: 1px solid var(--color-text);
+  border-radius: 5rem;
+  appearance: none;
+  padding: 0;
+  outline: none;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  transition: all ease-in-out var(--button-animation);
+}
+
+#contact-form label[for="privacy"] input:checked {
+  background-color: var(--color-accent);
+}
+
+#contact-form label[for="privacy"] input:checked::after {
+  background-color: var(--color-text);
+  content: "";
+  position: absolute;
+  inset: 0.4rem;
+  border-radius: 2rem;
+}
+
+#contact-form .button::after {
+  content: "\e163";
+}
+
+@media (max-width: 768px) {
+  .contact-form-align {
+    margin-left: 0rem;
+  }
+
+  #contact-form label.default {
+    padding: 2.2rem var(--space-x-i) 0.5rem;
+    margin-left: calc(var(--space-x-i) * -1);
+    margin-right: calc(var(--space-x-i) * -1);
+  }
+
+  #contact-form label.default span {
+    left: var(--space-x-i);
+  }
+}
