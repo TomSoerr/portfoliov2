@@ -34,10 +34,6 @@
   border-color: var(--color-accent);
 }
 
-#contact-form label.default:is(:focus-within, :hover) span {
-  opacity: 1;
-}
-
 .contact-form-align {
   margin-left: 1rem;
   opacity: 0.6;
