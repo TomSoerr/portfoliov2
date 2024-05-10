@@ -16,5 +16,5 @@ npm install
 4. Markdown in `src/projekte` hochladen
 5. In `src/content.js` den Projektnamen hinzufügen
 
-> [!INFO] 
+> [!CAUTION]
 > Das Bild muss ein png sein und den selben Namen wie das Markdown-Dokument haben.
