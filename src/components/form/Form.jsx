@@ -31,7 +31,7 @@ export default function Form() {
         Vergessen Sie bitte nicht zu schreiben, wie ich Ihnen antworten soll.
       </span>
       <label htmlFor="privacy">
-        <input type="checkbox" name="privacy" id="privacy" value="off" required />
+        <input type="checkbox" name="privacy" id="privacy" value="accepted" required />
         <span>
           Ich bin damit einverstanden, dass meine Daten an formspree.io gesendet werden und habe die
           {' '}
