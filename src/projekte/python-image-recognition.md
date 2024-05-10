@@ -5,3 +5,6 @@ Für eine Facharbeit in der Schule programmierte ich ein neuronales Netz, welche
 
 Anschließend habe ich das Thema weiter vertieft, mir einen kleinen Datensatz erstellt und mit YOLOv5 ein Modell trainiert. Dieses konnte in dem Handyspiel „Clash of Clans“ bestimmte zufällig generierte Objekte erkennen.
 
+## Links
+
+- [Python Certificate](https://www.freecodecamp.org/certification/tom-soerr/scientific-computing-with-python-v7)
