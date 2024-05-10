@@ -1,26 +1,14 @@
-# My “Etch a Sketch” Project
+# Mein Zeichenbrett Projekt
 
-## Description
+Im Vordergrund stand bei diesem Projekt die DOM-Manipulation. Bewusst wurde hierfür kein Canvas benutzt, damit ich den Umgang mit dem DOM lerne. 
 
-In this project from “The Odin Project” I create a painting web application only with JS DOM Manipulation. The canvas consists only of div boxes. <br>
-This project has the following features:
-
-- change the background,
-- change the color of the pen,
-- a bucket/fill tool,
-- an eraser,
-- choose a random color for each pixel,
-- put a shadow or a lightening over a color or the background,
-- turn a grid on and off,
-- select a new resolution for the canvas and
-- clean the canvas.
+Die Anwendung hat viele Funktionen, darunter etwa die Möglichkeit geschlossene Felder auszufüllen, Felder zu radieren und schattieren sowie das Raster in seiner Größe zu verändern. 
 
 ## Links
 
-- [Live Preview](https://tomsoerr.github.io/odin-etch-a-sketch/)
-- Link to the [Assignment](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
-- See my next [Project](https://github.com/TomSoerr/odin-calculator)
+- [Live Vorschau](https://tomsoerr.github.io/odin-etch-a-sketch/)
+- [Quellcode](https://github.com/TomSoerr/odin-etch-a-sketch)
+- [Aufgabe](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
 
-## Notes
 
-If you want to,  you can use the icons. They are made by myself.
+

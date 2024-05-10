@@ -1,29 +1,13 @@
-# Ma
+# Odin Tic-Tac-Toe 
 
-## Description
+In diesem Projekt habe ich gelernt, Funktionen sinnvoll und an logischen Stellen einem Objekt zuzuteilen. Dafür habe ich "IIFE" und "Factory Functions" verwendet. Am Ende wurde noch ein rekursiver Algorithmus implementiert (Minimax), gegen den man spielen kann.
 
-In this project from “The Odin Project” I create a Tic Tac Toe Web-App with
-JavaScript. You can play against a computer. In the
-JavaScript Code, I use Function Factories and IIFE's. <br>
-This project has:
-
-- a menu with:
-  - a name input,
-  - two icon radio button,
-  - a difficulty dropdown,
-  - a round dropdown and
-  - a start button and
-- a game page with:
-  - a board,
-  - a info box and
-  - a menu button.
-
-There are three difficulties. Easy, Medium and Hard.
-The easy difficulty picks a random cell.
-The medium and hard difficulties use the minimax algorithm.
+Am Anfange des Spiels kann man die Schwierigkeit und die Anzahl der Runden bestimmen. Dann spielt man gegen einen Computer die gewünschte Anzahl an Runden.  Zum Schluss wird dann der Gewinner verkündet.
 
 ## Links
 
-- [Live Preview](https://tomsoerr.github.io/odin-tic-tac-toe/)
-- Link to the [Assignment](https://www.theodinproject.com/lessons/node-path-javascript-tic-tac-toe)
-- See my next [Project](https://github.com/TomSoerr/odin-restaurant-page)
+- [Live Vorschau](https://tomsoerr.github.io/odin-tic-tac-toe/)
+- [Quellcode](https://github.com/TomSoerr/odin-tic-tac-toe)
+- [Aufgabe](https://www.theodinproject.com/lessons/node-path-javascript-tic-tac-toe)
+
+

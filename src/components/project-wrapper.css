@@ -10,6 +10,25 @@
   .project-wrapper main > :nth-child(2) {
     display: none;
   }
+
+  .project-wrapper::after {
+    content: "";
+    background-color: var(--color-bg-2);
+
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: max(
+      calc(
+        (100vw - var(--default-page-width) + 2 * var(--space-x-o)) / 2 -
+          var(--space-x-o)
+      ),
+      var(--space-m)
+    );
+    z-index: -1;
+    transform: translateX(calc(100% - 1rem));
+  }
 }
 
 .project-wrapper main > :nth-child(1) .section {

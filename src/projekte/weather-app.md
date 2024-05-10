@@ -1,10 +1,6 @@
 # Odin Wetter App Projekt
 
-## Aufgabe
-
 In diesem Projekt habe ich den Umgang mit APIs gelernt. Hierfür habe ich die Current Weather, 3-hour Forecast 5 days, and Geocoding API von openweathermap.org genutzt. 
-
-## Wetter App
 
 Die App zeigt das aktuelle Wetter und die Vorhersage für die nächsten Stunden. Es gibt die Möglichkeit, über eine Suchleiste nach anderen Orten zu suchen. Ebenfalls kann die Temperatureinheit zu Fahrenheit umgestellt werden. Die Icons wurden von mir erstellt.
 Für die Website habe ich eigene Icons erstellt. 
