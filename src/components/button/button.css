@@ -33,6 +33,7 @@
   background-color: transparent;
   position: relative;
   z-index: 2;
+  color: var(--color-bg-2);
 }
 
 .button > *::after {
@@ -63,6 +64,7 @@
   transform: translate(calc(var(--space-m) * -0.6), -50%);
   opacity: 0;
   transition: all var(--button-animation) ease-in-out;
+  color: var(--color-bg-2);
 }
 
 .button:is(:hover, :focus-visible) > * {

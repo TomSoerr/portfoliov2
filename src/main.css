@@ -54,7 +54,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   --nav-height: 5.5rem;
-  --color-accent: #f7ce46;
+  --color-accent: #5c61ff;
   --color-text: #000000;
   --color-bg-1: #f8f8f8;
   --color-bg-2: #ffffff;
@@ -128,8 +128,8 @@ header h1 {
 }
 
 section a {
-  color: var(--color-text);
-  text-decoration: underline;
+  color: var(--color-accent);
+  text-decoration: none;
 }
 
 section a:not(.hide),
@@ -140,7 +140,7 @@ section a:not(.hide),
 }
 
 section a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 section a:not(.hide)::after,

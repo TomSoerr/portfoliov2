@@ -102,6 +102,7 @@ nav button:not(.open) + ul a.active::before {
 
 nav a.active {
   z-index: 101;
+  color: var(--color-bg-2);
 }
 
 /* hover default */
