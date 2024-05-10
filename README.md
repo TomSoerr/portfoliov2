@@ -1,6 +1,6 @@
 # Portfolio
 
-Das Portfolio ist mit React, Vite und Remark erstellt. Wird auf die `main`-Branch gepusht, wird das Portfolio mit GitHub Actions ein production build erstellt, der dann auf in das TomSoerr.github.io Repository gepusht wird. Dort wird die Seite dann gehostet.
+Das Portfolio ist mit React, Vite und Remark erstellt. Wenn ich auf die `main`-Branch pushe, wird mit GitHub Actions ein production build erstellt, der dann in das TomSoerr.github.io Repository kopiert wird. Dort ist die Seite dann gehostet.
 
 ## Installation
 
@@ -18,3 +18,7 @@ npm install
 
 > [!CAUTION]
 > Das Bild muss ein png sein und den selben Namen wie das Markdown-Dokument haben.
+
+## Links
+
+- [Imprint](http://localhost:5173/#/impressum)

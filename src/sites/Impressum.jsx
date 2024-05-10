@@ -23,7 +23,7 @@ export default function Impressum() {
           {/* Somit fallen die Websites nicht unter die Impressumspflicht. */}
         </p>
         <p>
-          Müssen Sie mich dennoch erreichen, nutzen Sie dafür bitte das
+          Möchten Sie mich dennoch kontaktieren, nutzen Sie dafür bitte das
           {' '}
           <Link className="hide" to="/kontakt">Formular</Link>
           .
