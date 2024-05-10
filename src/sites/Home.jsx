@@ -15,11 +15,11 @@ export default function Home() {
           <h1>Moin Moin</h1>
           <p>
             Ich bin Tom, ein self-taught Frontend-Webentwickler und
-            Screendesigner aus Norddeutschland. Hier finden Sie meine größten
+            Screendesigner. Hier finden Sie meine größten
             Projekte, seitdem ich 2021 angefangen habe, programmieren zu lernen.
           </p>
           <p>
-            Zu Beginn meiner Laufbahn machte ich Online-Kurse wie
+            Am Anfang machte ich den Online-Kurs von
             {' '}
             <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
             {' '}
@@ -27,17 +27,17 @@ export default function Home() {
             {' '}
             <a href="https://www.theodinproject.com/">Odin Projektes</a>
             {' '}
-            Anschließend machte
-            ich eine Ausbildung zum gestaltungstechnischen Assistenten mit
-            Schwerpunkt Screen-Design. In dieser Ausbildung sammelte ich weiter
-            Erfahrungen in der Webentwicklung und lernte es, mit Adobe
-            Illustrator, Photoshop, InDesign und Figma zu arbeiten. Somit
-            erstrecken sich meine Fähigkeiten von der Konzeption, zur Gestaltung
-            bis hin zur Entwicklung.
+            , um die Grundlagen von HTML, CSS und JavaScript zu lernen.
+            Anschließend absolvierte ich eine Ausbildung zum
+            gestaltungstechnischen Assistenten mit Schwerpunkt Screen-Design.
+            In dieser Ausbildung sammelte ich weiter Erfahrungen in der
+            Webentwicklung und lernte das Arbeiten mit Adobe Illustrator,
+            Photoshop, InDesign und Figma. Somit erstrecken sich meine
+            Fähigkeiten von der Konzeption, zur Gestaltung bis hin zur
+            Entwicklung.
           </p>
           <p>
-            Ferner habe ich rudimentäre Kenntnisse in LaTeX, Python und
-            der Netzwerktechnik.
+            Daneben habe ich rudimentäre Kenntnisse in LaTeX, Python und Netzwerktechnik.
           </p>
           <Button src="/kontakt">Kontakt aufnehmen</Button>
         </Section>

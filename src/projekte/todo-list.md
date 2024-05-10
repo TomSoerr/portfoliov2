@@ -1,10 +1,6 @@
 # Odin Todo Liste Projekt
 
-## Aufgabe
-
-In diesem Projekt wurde der Fokus auf objektorientierte Programmierung gelegt. Besonders bei einer Todo App bietet sich die Unterteilung in einzelne Module besonders an. 
-
-## Todo App
+In diesem Projekt lagt der Fokus auf objektorientierte Programmierung. Besonders bei einer Todo App bietet sich die Unterteilung in einzelne Module besonders an. 
 
 Die Anwendung hat Funktionen wie die Sortierung nach „Alle“, „Heute“ und „Diese Woche“. Die Todos können auch in bestimmte Projekte eingeteilt und sortiert werden. Jede Aufgabe hat einen Titel, Status, Datum, Priorität und ein Feld für Notizen.
 

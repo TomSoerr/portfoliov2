@@ -97,10 +97,12 @@
 
 #slider-v {
   scrollbar-width: none;
-  padding: var(--nav-height) 0 calc(var(--space-x-o) * 2)
-    calc(var(--space-m) - var(--space-x-o));
+  padding: var(--nav-height) 0 calc(var(--space-x-o) * 2) var(--space-m);
   margin: 0;
-  width: calc(var(--sidebar-width) - var(--space-x-o));
+  width: calc(
+    var(--sidebar-width) - var(--space-x-o) -
+      (var(--space-m) - var(--space-x-o)) * 2
+  );
   display: none;
   flex-direction: column;
   position: fixed;
@@ -111,15 +113,22 @@
       (100vw - var(--default-page-width) + 2 * var(--space-x-o)) / 2 -
         var(--space-x-o)
     ),
-    var(--space-x-o)
+    var(--space-m)
   );
   height: 100vh;
   gap: var(--space-m);
+  background-color: var(--color-bg-2);
+  border-left: 1px solid var(--color-border);
+}
+
+#slider-v .card {
+  background-color: var(--color-bg-1);
 }
 
 #slider-v::before {
   content: "Weitere Projekte";
   position: fixed;
+  z-index: 99;
   display: flex;
   align-items: center;
   font-size: 1.8rem;
@@ -130,7 +139,17 @@
   border-radius: 7rem;
   border: 1px solid var(--color-border);
   top: var(--space-x-o);
-  width: calc(var(--sidebar-width) - var(--space-m));
+  right: max(
+    calc(
+      (100vw - var(--default-page-width) + 2 * var(--space-x-o)) / 2 -
+        var(--space-x-o)
+    ),
+    var(--space-m)
+  );
+  width: calc(
+    var(--sidebar-width) - var(--space-x-o) -
+      (var(--space-m) - var(--space-x-o)) * 2 - var(--space-m)
+  );
   height: calc(var(--nav-height) - var(--space-x-o) * 2);
   background-color: var(--color-bg-2);
   background-color: color-mix(in srgb, var(--color-bg-2), transparent 60%);
