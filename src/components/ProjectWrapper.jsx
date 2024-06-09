@@ -13,7 +13,7 @@ export default function ProjectWrapper({ path }) {
 
   useEffect(() => {
     document.title = beautifyName(path);
-  }, []);
+  }, [path]);
 
   useEffect(() => {
     document.body.classList.add('project-wrapper');
