@@ -11,6 +11,9 @@ export default function SimpleMarkdown({ data }) {
   return (
     <Markdown
       remarkPlugins={[remarkGfm]}
+      components={{
+        a: ({ node, ...props }) => <a {...props} target="_blank" />,
+      }}
     >
       {data}
     </Markdown>
