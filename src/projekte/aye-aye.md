@@ -22,5 +22,5 @@ Nach einigen Moodboards entwickelte ich dann erste Logoentwürfe und Wireframes.
 
 ## Links
 
-- [Live Vorschau](https://tomsoerr.github.io/Abschlusspruefung-der-Berufsfachschule-Screendesign-2024-BMK-HH/website/index.html#pw=AP-2024-AyeAye)
+- [Live Vorschau](https://tomsoerr.github.io/Abschlusspruefung-der-Berufsfachschule-Screendesign-2024-BMK-HH/website/index.html)
 
