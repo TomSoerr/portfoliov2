@@ -2,6 +2,7 @@ export default {
   projekte: [
     "aye-aye",
     "rauna-freyher",
+    "kiaras-buecherwelt",
     "tsv-bargteheide",
     "battleship",
     "weather-app",
@@ -9,6 +10,5 @@ export default {
     "tic-tac-toe",
     "etch-a-sketch",
     "python-image-recognition",
-    "kiaras-buecherwelt",
   ],
 };
