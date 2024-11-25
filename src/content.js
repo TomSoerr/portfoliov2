@@ -9,5 +9,6 @@ export default {
     "tic-tac-toe",
     "etch-a-sketch",
     "python-image-recognition",
+    "kiaras-buecherwelt",
   ],
 };
