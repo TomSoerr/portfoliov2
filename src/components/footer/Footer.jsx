@@ -13,7 +13,7 @@ function Footer() {
         <div className="section-content">
 
           <img src={`${baseUrl}img/logo-dark.svg`} alt="Logo" />
-          <p className="about"> Tom Soerr 2024 ©</p>
+          <p className="about"> Tom Soerr 2025 ©</p>
 
           <div className="social">
             <h3>Socials</h3>
