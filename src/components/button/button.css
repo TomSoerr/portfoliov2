@@ -2,7 +2,7 @@
   background-color: transparent;
   border: none;
   color: var(--color-bg-2);
-
+  line-height: 1.2;
   font-size: inherit;
   cursor: pointer;
   margin: 0;

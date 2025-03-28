@@ -293,6 +293,10 @@ nav button.open div::before {
     padding: var(--nav-y-gap) 0.5rem;
   }
 
+  nav a.active {
+    color: var(--color-text);
+  }
+
   /* nav item hover circle  */
   nav ul li a::after {
     content: "";
