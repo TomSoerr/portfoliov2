@@ -1,4 +1,6 @@
-# Odin Todo Liste Projekt
+# Odin Todo Liste
+
+*Mai 2022*
 
 In diesem Projekt lagt der Fokus auf objektorientierte Programmierung. Besonders bei einer Todo App bietet sich die Unterteilung in einzelne Module besonders an. 
 

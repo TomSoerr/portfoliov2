@@ -6,7 +6,7 @@ import Button from '../components/button/Button.jsx';
 
 export default function Projekte() {
   useEffect(() => {
-    document.title = 'Tom\'s Projekte';
+    document.title = "Tom's Projekte";
   }, []);
   return (
     <Main>
@@ -14,25 +14,22 @@ export default function Projekte() {
         <Section>
           <h1>Meine Projekte</h1>
           <p>
-            Ich habe einige meiner besten Projekte zusammengetragen und
-            aufbereitet. So können Sie einen Einblick in meine Arbeitsweise
-            erhalten.
+            Ich habe einige meiner Projekte zusammengetragen und aufbereitet. So
+            können Sie einen Einblick in meine Arbeitsweise erhalten.
           </p>
 
           <p>
-            Die Projekte sind sehr vielfältig und beinhalten unter
-            anderem Logo-Entwicklung, Konzeption, Marktanalysen und
+            Die Projekte sind sehr vielfältig und beinhalten unter anderem
+            Konzeption, Marktanalysen, Logo-Entwicklung, Gestaltung und
             Programmierung. Mein Ziel ist es, nicht nur eine schnelle, sondern
-            eine nachhaltige und durchdachte Lösung zu finden. Dabei liegen meine
-            Stärken besonders in der Organisation und Entwicklung der Projekte.
+            eine nachhaltige und durchdachte Lösung zu finden. Dabei liegen
+            meine Stärken besonders in der Organisation und Programmierung der
+            Projekte.
           </p>
           <p>
-            Auf meinem
-            {' '}
-            <a href="https://github.com/TomSoerr">GitHub Profil</a>
-            {' '}
-            finden Sie zudem weitere Projekte und den
-            Quellcode der hier gezeigten Projekte.
+            Auf meinem <a href="https://github.com/TomSoerr">GitHub Profil</a>{' '}
+            finden Sie zudem weitere Projekte und den Quellcode der hier
+            gezeigten Projekte.
           </p>
           <Button src="/kontakt">Kontakt</Button>
         </Section>

@@ -1,5 +1,7 @@
 # Realkundenprojekt – Rauna Freyher Naturkosmetik
 
+*Februar 2024*
+
 ## Aufgabenstellung
 
 Im Realkundenprojekt an der Beruflichen Schule für Medien und Kommunikation sollte für die Kundin Rauna Freyher eine Website erstellt werden, die ihren Produktkatalog übersichtlich und online wiedergibt. 
@@ -18,6 +20,9 @@ Parallel zu der Logoentwicklung fing ich an, Wireframes für die Website zu gest
 - Wiederverwendbare Blöcke dank JavaScript
 - Individualisierbares Kontaktformular für Produktbestellung
 
+## Zeitaufwand
+
+6 Wochen
 
 ## Links
 

@@ -13,5 +13,7 @@
   "semi": true,
   "quoteProps": "consistent",
   "bracketSpacing": true,
-  "singleAttributePerLine": true
+  "singleAttributePerLine": true,
+  "proseWrap": "always",
+  "printWidth": 80
 }

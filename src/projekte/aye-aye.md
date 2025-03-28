@@ -1,4 +1,6 @@
-# Abschlussprüfung Screendesign - Aye-Aye
+# Abschlussprüfung Screendesign 
+
+*April 2024*
 
 ## Aufgabenstellung
 
@@ -19,8 +21,13 @@ Nach einigen Moodboards entwickelte ich dann erste Logoentwürfe und Wireframes.
 - Zentrale Datei mit allen Touren
 - Formular mit Auswahl der Touren
 
+## Zeitaufwand
+
+3 Wochen
+
 
 ## Links
 
 - [Live Vorschau](https://tomsoerr.github.io/Abschlusspruefung-der-Berufsfachschule-Screendesign-2024-BMK-HH/website/index.html)
+- [Quellcode](https://github.com/TomSoerr/Abschlusspruefung-der-Berufsfachschule-Screendesign-2024-BMK-HH)
 
