@@ -1,4 +1,6 @@
-# Odin Wetter App Projekt
+# Odin Wetter App 
+
+*Juni 2022*
 
 In diesem Projekt habe ich den Umgang mit APIs gelernt. Hierfür habe ich die Current Weather, 3-hour Forecast 5 days, and Geocoding API von openweathermap.org genutzt. 
 

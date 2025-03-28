@@ -6,7 +6,7 @@ import Button from '../components/button/Button';
 
 export default function Home() {
   useEffect(() => {
-    document.title = 'Tom\'s Portfolio';
+    document.title = "Tom's Portfolio";
   }, []);
   return (
     <Main>
@@ -14,30 +14,32 @@ export default function Home() {
         <Section>
           <h1>Moin Moin</h1>
           <p>
-            Ich bin Tom, ein self-taught Frontend-Webentwickler und
-            Screendesigner. Hier finden Sie meine größten
-            Projekte, seitdem ich 2021 angefangen habe, programmieren zu lernen.
+            Ich bin Tom, Webentwickler und Screendesigner mit einer Leidenschaft
+            für Details. Auf meinem Portfolio präsentiere ich einige meiner
+            Projekte, die meine Entwicklung seit meinem Einstieg in die
+            Programmierung im Jahr 2021 widerspiegeln.
           </p>
           <p>
-            Am Anfang machte ich den Online-Kurs von
-            {' '}
-            <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
-            {' '}
-            und große Teile des
-            {' '}
-            <a href="https://www.theodinproject.com/">Odin Projektes</a>
-            {' '}
-            , um die Grundlagen von HTML, CSS und JavaScript zu lernen.
+            Mein Weg begann mit den Online-Kursen von{' '}
+            <a href="https://www.freecodecamp.org/">freeCodeCamp</a> und dem{' '}
+            <a href="https://www.theodinproject.com/">Odin Project</a>, wo ich
+            mir die Grundlagen von HTML, CSS und JavaScript aneignete.
             Anschließend absolvierte ich eine Ausbildung zum
-            gestaltungstechnischen Assistenten mit Schwerpunkt Screen-Design.
-            In dieser Ausbildung sammelte ich weiter Erfahrungen in der
-            Webentwicklung und lernte das Arbeiten mit Adobe Illustrator,
-            Photoshop, InDesign und Figma. Somit erstrecken sich meine
-            Fähigkeiten von der Konzeption, zur Gestaltung bis hin zur
-            Entwicklung.
+            gestaltungstechnischen Assistenten mit Schwerpunkt Screen-Design, in
+            der ich meine Fähigkeiten in der Webentwicklung vertiefte und
+            professionelle Tools wie Adobe Illustrator, Photoshop, InDesign und
+            Figma beherrschte.
           </p>
           <p>
-            Daneben habe ich rudimentäre Kenntnisse in LaTeX, Python und Netzwerktechnik.
+            Derzeit studiere ich Angewandte Informatik, um meine technischen
+            Kenntnisse weiter auszubauen. Während mein bisheriger Fokus auf dem
+            Frontend lag, konzentriere ich mich nun verstärkt auf die
+            Softwareentwicklung. Neben Webtechnologien bringe ich auch
+            Erfahrungen in LaTeX, Python, C und Cybersecurity mit.
+          </p>
+          <p>
+            Schauen Sie sich gern meine Projekte an – ich freue mich über Ihr
+            Feedback und spannende neue Herausforderungen!
           </p>
           <Button src="/kontakt">Kontakt aufnehmen</Button>
         </Section>

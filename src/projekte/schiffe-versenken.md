@@ -1,4 +1,6 @@
-# Odin Schiffe versenken Projekt
+# Odin Schiffe versenken 
+
+*August 2022*
 
 Mit diesem Projekt aus dem Odin Kurs habe ich „Test Driven Development“ in der Anwendung mit seinen Vorteilen kennengelernt. Mit Jest schrieb ich zuerst die Tests und dann den Code für das Spiel. Am Ende hatten alle wichtigen Funktionen Tests.
 
