@@ -2,14 +2,14 @@
 
 *März 2025*
 
-Mit diesem Projekt möchte ich meine Fähigkeiten über die Frontend-Entwicklung hinaus demonstrieren.  Aufgrund meiner eigenen Anwendung von Software zur Zeiterfassung im Studium nutzte ich diese Gelegenheit, um eine eigene APP zu entwickeln.
+Um mein Studium zeitlich zu organisieren und einen Überblick über meinen Lernaufwand zu behalten, nutze ich Zeiterfassungssoftware wie Toggl Track. Daher stand für mich direkt fest, anhand was für eines Projekts ich meine Fähigkeiten über die Frontend-Entwicklung hinaus demonstrieren möchte. 
 
-Die Anwendung ist mit Express und NodeJS sowie ReactJS umgesetzt. Ebenso entschied ich mich für eine Progressiv-Web-App (PWA) als Frontend, um auch eine Offline-Nutzung zu gewährleisten. Die RESTful API dient als Methode, die Einträge auch über mehrere Geräte hinweg zu synchronisieren.
+In meinen Semesterferien habe ich mich also in neue Technologien der Full-Stack Webentwicklung gelesen. Neu für mich waren hierbei PostgresSQL mit Prisma als ORM, ExpressJS als Backend Framework für die RESTful API und Service Worker sowie Dexie für die Offline First PWA. 
 
 ## Funktionen
 
-- Offline first
 - Nutzung auf mehreren Geräten
+- Synchronisation auf mehreren Geräten
 - Aktiver Timer
 - Ältere Erfassung eintragen
 - Import von Toggl Track CSV
