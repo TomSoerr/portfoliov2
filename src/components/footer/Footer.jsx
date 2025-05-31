@@ -22,7 +22,7 @@ function Footer() {
                 <a className="link" href="https://www.linkedin.com/in/tom-soerr-b5707a265/">LinkedIn</a>
               </li>
               <li>
-                <a className="link" href="https://www.xing.com/profile/Tom_Soerr/cv">Xing</a>
+                <a className="link" href="https://www.xing.com/profile/Tom_Soerr">Xing</a>
               </li>
               <li>
                 <a className="link" href="https://github.com/TomSoerr">GitHub</a>
