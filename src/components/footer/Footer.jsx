@@ -1,8 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './Footer.css';
-import content from '../../content';
-import beautifyName from '../helper/beautifyName';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./Footer.css";
+import content from "../../content";
+import beautifyName from "../helper/beautifyName";
 
 function Footer() {
   const baseUrl = import.meta.env.BASE_URL;
@@ -11,23 +11,33 @@ function Footer() {
     <footer className="section-outer">
       <div className="section bg">
         <div className="section-content">
-
           <img src={`${baseUrl}img/logo-dark.svg`} alt="Logo" />
-          <p className="about"> Tom Soerr 2025 ©</p>
+          <p className="about"> Tom 2026 ©</p>
 
           <div className="social">
             <h3>Socials</h3>
             <ul>
               <li>
-                <a className="link" href="https://www.linkedin.com/in/tom-soerr-b5707a265/">LinkedIn</a>
+                <a
+                  className="link"
+                  href="https://www.linkedin.com/in/tom-soerr-b5707a265/"
+                >
+                  LinkedIn
+                </a>
               </li>
               <li>
-                <a className="link" href="https://www.xing.com/profile/Tom_Soerr">Xing</a>
+                <a
+                  className="link"
+                  href="https://www.xing.com/profile/Tom_Soerr"
+                >
+                  Xing
+                </a>
               </li>
               <li>
-                <a className="link" href="https://github.com/TomSoerr">GitHub</a>
+                <a className="link" href="https://github.com/TomSoerr">
+                  GitHub
+                </a>
               </li>
-
             </ul>
           </div>
 
@@ -46,9 +56,7 @@ function Footer() {
               {content.projekte.map((element) => (
                 <li key={element}>
                   <Link to={`/projekte/${element}`}>
-
                     {beautifyName(element)}
-
                   </Link>
                 </li>
               ))}
@@ -56,7 +64,6 @@ function Footer() {
           </div>
         </div>
       </div>
-
     </footer>
   );
 }
